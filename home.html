@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./home_styles.css">
+    <script src = "./home_script.js" defer></script>
+</head>
+<body id="body_id">
+    <!--Navigation Bar-->
+    <div class="navbar">
+        <div class="navbar_container">
+            <a href="home.html" id="navbar_logo">PORTFOLIO</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="menu_item">
+                    <a href="#body_id" class=" menu_links">Home</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#about_me_id" class=" menu_links">About</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#skills_id" class=" menu_links">Skills</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#projects_id" class=" menu_links">Projects</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#contact_me_id" class=" menu_links">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Intro Section-->
+    <div class="home_container" id="home_id">
+        <div class="intro">
+            <h5 class= "hello">Hello,</h1>
+            <h5 class= "name"> My Name Is</h3>
+            <h1 class= "rishi"> Rishi</h1>
+            <div class="social_media">
+                <a href="https://www.linkedin.com/in/rishisajay/" target="_blank" rel="noopener noreferrer" class="social_media_links">
+                    <i class="linkedin_icon">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+                        </svg>
+                    </i>
+                </a>
+                <a href="https://github.com/RishiSajayUF24" target="_blank" rel="noopener noreferrer" class="social_media_links">
+                    <i class="github_icon">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path>
+                        </svg>
+                    </i>
+                </a>
+                <a href="https://www.facebook.com/rishi.sajay.3/" target="_blank" rel="noopener noreferrer" class="social_media_links">
+                    <i class="facebook_icon">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+                        </svg>
+                    </i>
+                </a>
+            </div>
+        </div>
+
+        <div class="intro_card_container">
+            <div class="intro_card">
+                <div class="text">
+                    <p>Welcome! My name is Rishi Sajay, and I am a programmer. This website is a
+                        collection of my work. Check out my projects, socials,
+                        and more!
+                    </p>
+                </div>
+            </div>
+            <div class="flip_icon">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.854 7.146a.5.5 0 00-.708 0l-2 2a.5.5 0 10.708.708L2.5 8.207l1.646 1.647a.5.5 0 00.708-.708l-2-2zm13-1a.5.5 0 00-.708 0L13.5 7.793l-1.646-1.647a.5.5 0 00-.708.708l2 2a.5.5 0 00.708 0l2-2a.5.5 0 000-.708z" clip-rule="evenodd"></path><path fill-rule="evenodd" d="M8 3a4.995 4.995 0 00-4.192 2.273.5.5 0 01-.837-.546A6 6 0 0114 8a.5.5 0 01-1.001 0 5 5 0 00-5-5zM2.5 7.5A.5.5 0 013 8a5 5 0 009.192 2.727.5.5 0 11.837.546A6 6 0 012 8a.5.5 0 01.501-.5z" clip-rule="evenodd"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!--About me Section-->
+    <div class="about_me_container" id="about_me_id">
+        <h2 class="about_me_title">
+            About Me
+        </h2>
+        <div class="about_me_body_container">
+            <div class="about_me_text">
+                <h3 class="about_me_text_intro">
+                   My name is Rishi Sajay and I am a <mark class="mark1">UF Undergraduate</mark>
+                </h3>
+                <p class="about_me_paragraph">
+                   Hello! I am a rising junior at the University of Florida. I was introduced to computer science in high school, and I 
+                   quickly grew to enjoy it. When I graduated, I decided to follow this interest in college. I am currently pursuing a Bachelor of Science degree in 
+                   Computer Science at the UF College of Engineering, along with dual minors in Mathematics and Digital Arts and Sciences. 
+                   I am spending my free time learning about HTML, CSS, JavaScript, app development, and machine learning. This website is a 
+                   medium to showcase my skills and passion for computer science. I hope you enjoy what you see, and I always appreciate feedback.
+                   Thank you! 
+                </p>
+                <button class="resume_button"><a href="files/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                </button>
+            </div>
+            <div class="my_picture"></div>
+        </div>
+    </div>
+
+    <!--Skills Section-->
+    <div class="skills_container" id="skills_id">
+        <div class="skills_title">My Skills</div>
+        <div class="skills_body_container">
+            <div class="progress_container">
+                <div class="row1">
+                    <div class="skill python">
+                        <svg height="120" width="120" class="python_svg">
+                            <defs>
+                                <linearGradient id="linear1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                  <stop offset="0%"   stop-color="#B50000"/>
+                                  <stop offset="100%" stop-color="#FF4300"/>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="60" cy="60" r="57" />
+                        </svg>
+                        <h6 class="python_text">Python 80%</h6>
+                    </div>
+                    <div class="skill c_plus_plus">
+                        <svg height="120" width="120" class="c_plus_plus_svg">
+                            <defs>
+                                <linearGradient id="linear2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%"   stop-color="#FF4300"/>
+                                    <stop offset="100%" stop-color="#FF9600"/>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="60" cy="60" r="57" />
+                        </svg>
+                        <h6 class="c_plus_plus_text">C++ 90%</h6>
+                    </div>
+                    <div class="skill java">
+                        <svg height="120" width="120" class="java_svg">
+                            <defs>
+                                <linearGradient id="linear3" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%"   stop-color="#FF9600"/>
+                                    <stop offset="100%" stop-color="#FFFE00"/>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="60" cy="60" r="57" />
+                        </svg>
+                        <h6 class="java_text">Java 85%</h6>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="skill html">
+                        <svg height="120" width="120" class="html_svg">
+                            <defs>
+                                <linearGradient id="linear4" x1="0%" y1="0%" x2="100%" y2="0%">
+                                  <stop offset="0%"   stop-color="#FFFE00"/>
+                                  <stop offset="100%" stop-color="#43C300"/>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="60" cy="60" r="57" />
+                        </svg>
+                        <h6 class="html_text">HTML 55%</h6>
+                    </div>
+                    <div class="skill css">
+                        <svg height="120" width="120" class="css_svg">
+                            <defs>
+                                <linearGradient id="linear5" x1="0%" y1="0%" x2="100%" y2="0%">
+                                  <stop offset="0%"   stop-color="#43C300"/>
+                                  <stop offset="100%" stop-color="#15FD81"/>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="60" cy="60" r="57" />
+                        </svg>
+                        <h6 class="css_text">CSS 70%</h6>
+                    </div>
+                    <div class="skill javascript">
+                        <svg height="120" width="120" class="javascript_svg">
+                            <defs>
+                                <linearGradient id="linear6" x1="0%" y1="0%" x2="100%" y2="0%">
+                                  <stop offset="0%"   stop-color="#15FD81"/>
+                                  <stop offset="100%" stop-color="#00FFD0"/>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="60" cy="60" r="57" />
+                        </svg>
+                        <h6 class="javascript_text">Javscript 40%</h6>
+                    </div>
+                </div>
+                <div class="row3">
+                    <div class="skill unity">
+                        <svg height="120" width="120" class="unity_svg">
+                            <defs>
+                                <linearGradient id="linear7" x1="0%" y1="0%" x2="100%" y2="0%">
+                                  <stop offset="0%"   stop-color="#00FFD0"/>
+                                  <stop offset="100%" stop-color="#005CFF"/>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="60" cy="60" r="57" />
+                        </svg>
+                        <h6 class="unity_text">Unity 55%</h6>
+                    </div>
+                    <div class="skill ml">
+                        <svg height="120" width="120" class="ml_svg">
+                            <defs>
+                                <linearGradient id="linear8" x1="0%" y1="0%" x2="100%" y2="0%">
+                                  <stop offset="0%"   stop-color="#005CFF"/>
+                                  <stop offset="100%" stop-color="#8800FF"/>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="60" cy="60" r="57" />
+                        </svg>
+                        <h6 class="ml_text">Scikit Learn/Keras 60%</h6>
+                    </div>
+                    <div class="skill matlab">
+                        <svg height="120" width="120" class="matlab_svg">
+                            <defs>
+                                <linearGradient id="linear9" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%"   stop-color="#8800FF"/>
+                                <stop offset="100%" stop-color="#FF0047"/>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="60" cy="60" r="57" />
+                        </svg>
+                        <h6 class="matlab_text">Matlab 80%</h6>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="skills_text">
+                <h3 class="skills_text_intro">
+                    A brief overview of my <mark class="mark2">skills and experiences</mark>
+                 </h3>
+                <p class="skills_paragraph">
+                    I am very fluent in Java, C++, MATLAB, and Python. I have the most experience in C++. I have recently been learning HTML, 
+                    Javascript, and CSS, which I hope to have demonstrated with this website.
+                    I have done multiple projects in Unity in highschooland and college. 
+                    I recently took an Applied Machine Learning course and have been looking into my own projects in the field of ML, as it is 
+                    a topic that greatly interests me. 
+                    I have moderate experience in Scikit Learn and Keras, including neural networks. 
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="projects_container" id="projects_id">
+        <div class="projects_title">My Projects</div>
+        <h3 class="projects_intro">
+            A collection of my most <mark class="mark3">relevant projects.</mark> Click anywhere on a card to <mark class="mark3">learn more!</mark>
+        </h3>
+        <div class="card_container">
+            <div class="projects_card">
+                <h2>Weather App</h2>
+                <p>Website that provides real time weather information based on city name or zip code.
+                </p>
+                <h6 class="powered_by">Powered by HTML, Javascript, CSS, and the open weather map api</h6>
+                <button class="card_button"><a href="weather.html" target="_blank" rel="noopener noreferrer">Go to site</a></button>
+            </div>
+            <div class="projects_card">
+                <h2>KD Tree</h2>
+                <p>Developed a KD Tree implementation for large scale multidimensional data storage. The program creates a KD Tree from a given dataset
+                    and then performs a range query on the tree, returning all tuples within the query. Refer to Github for a more detailed 
+                    explanation of KD Trees. 
+                </p>
+                <h6 class="powered_by">Powered by C++</h6>
+                <button class="card_button"><a href="https://github.com/RishiSajay/KDTree" target="_blank" rel="noopener noreferrer">Github</a></button>
+            </div>
+            <div class="projects_card">
+                <h2>AEPS</h2>
+                <p>Another Educational Physics Simulator! This game simulates basic physics concepts
+                    to help students better understand how they work.
+                </p>
+                <h6 class="powered_by">Powered by Unity</h6>
+                <button class="card_button"><a href="Files/Build.zip">Download Game</a></button>
+                <button class="card_button"><a href="https://github.com/RishiSajay/AEPS" target="_blank" rel="noopener noreferrer">Github</a></button>
+
+            </div>
+            <div class="projects_card">
+                <h2>Portfolio Website</h2>
+                <p>I developed this website using html, CSS, and JavaScript. Please feel free to look at my code 
+                    through Github!
+                </p>
+                <h6 class="powered_by">Powered by HTML, Javascript, and CSS</h6>
+                <button class="card_button"><a href="https://github.com/RishiSajay/PortfolioWebsite" target="_blank" rel="noopener noreferrer">Github</a></button>
+            </div>
+            <div class="projects_card">
+                <h2>Flight Optimizer</h2>
+                <p>This program gives users the most efficient flight paths based on cost for trips within the US based on 2018
+                    flight data. This project takes advantage of Dijkstra's  shortest path algorithm and large scale data manipulation. 
+                    Co-developers - Max LoGalbo, Chase Wrenn
+                </p>
+                <h6 class="powered_by">Powered by C++, SFML, TGUI, and Kaggle</h6>
+                <button class="card_button"><a href="https://github.com/chasewrennufl/Project3bFinal" target="_blank" rel="noopener noreferrer">Github</a></button>
+                <button class="card_button"><a href="Files/flight_project_report.pdf" target="_blank" rel="noopener noreferrer">Documentation</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="contact_me_container" id="contact_me_id">
+        <div class="contact_me_title">Contact Me</div>
+        <div class="contact_me_container_inner">
+            <div class="message_container">
+                <h3 class="contact_me_text_intro">Get In <mark class="mark4">Touch</mark></h3>
+                <div class="message_intro">
+                    Hello! Please fill out this form if you would like to get in touch with me.
+                    If you wish to email me directly, click on the eail to the right. 
+                    If you want to hire me for a freelance project,
+                    describe your project in the message section. Thank you!
+                </div>
+                <div class="message_intro_small_screen">
+                    Hello! Please fill out this form if you would like to get in touch with me.
+                    If you wish to email me directly, click on the email below. 
+                    If you want to hire me for a freelance project,
+                    describe your project in the message section. Thank you!
+                </div>
+                <form action="https://formspree.io/f/xnqwyvrg" method="POST" id="my-form">
+                    <div class="name_email_container">
+                        <input type="text" name="name" placeholder="Your Name" required="required" class="form_group user_name">
+                        <input type="text" name="email" placeholder="Your Email" required="required" class="form_group user_email">
+                    </div>
+                    <input type="text" name="subject" placeholder="Subject" required="required" class="form_group user_subject">
+                    <textarea name="body" cols="30" rows="10" placeholder="Message" required="required" class="form_group user_message"></textarea> 
+                    <button type="submit" class="submit_button">Submit</button>
+                </form>
+                <div class="status" id="status"></div>
+            </div>
+            <div class="personal_info_image">
+                <div class="personal_info_container">
+                    <div class="phone_email_container">
+                        <div class="pi email_container">
+                            <a href="mailto:sajay.rishi@gmail.com" class="email_link">
+                                <div class="personal_info_icon">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 110.8V792H136V270.8l-27.6-21.5 39.3-50.5 42.8 33.3h643.1l42.8-33.3 39.3 50.5-27.7 21.5zM833.6 232L512 482 190.4 232l-42.8-33.3-39.3 50.5 27.6 21.5 341.6 265.6a55.99 55.99 0 0 0 68.7 0L888 270.8l27.6-21.5-39.3-50.5-42.7 33.2z"></path>
+                                    </svg>
+                                </div>
+                                <div class="personal_info_text">sajay.rishi@gmail.com</div>
+                            </a>
+                        </div>
+                        <div class="pi phone_container">
+                            <div class="personal_info_icon">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M877.1 238.7L770.6 132.3c-13-13-30.4-20.3-48.8-20.3s-35.8 7.2-48.8 20.3L558.3 246.8c-13 13-20.3 30.5-20.3 48.9 0 18.5 7.2 35.8 20.3 48.9l89.6 89.7a405.46 405.46 0 0 1-86.4 127.3c-36.7 36.9-79.6 66-127.2 86.6l-89.6-89.7c-13-13-30.4-20.3-48.8-20.3a68.2 68.2 0 0 0-48.8 20.3L132.3 673c-13 13-20.3 30.5-20.3 48.9 0 18.5 7.2 35.8 20.3 48.9l106.4 106.4c22.2 22.2 52.8 34.9 84.2 34.9 6.5 0 12.8-.5 19.2-1.6 132.4-21.8 263.8-92.3 369.9-198.3C818 606 888.4 474.6 910.4 342.1c6.3-37.6-6.3-76.3-33.3-103.4zm-37.6 91.5c-19.5 117.9-82.9 235.5-178.4 331s-213 158.9-330.9 178.4c-14.8 2.5-30-2.5-40.8-13.2L184.9 721.9 295.7 611l119.8 120 .9.9 21.6-8a481.29 481.29 0 0 0 285.7-285.8l8-21.6-120.8-120.7 110.8-110.9 104.5 104.5c10.8 10.8 15.8 26 13.3 40.8z"></path>
+                                </svg>
+                            </div>
+                            <div class="personal_info_text">407-721-0428</div>
+                        </div>
+                    </div>
+                    <div class="pi address_container">
+                        <div class="personal_info_icon">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 12 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 0C2.69 0 0 2.5 0 5.5 0 10.02 6 16 6 16s6-5.98 6-10.5C12 2.5 9.31 0 6 0zm0 14.55C4.14 12.52 1 8.44 1 5.5 1 3.02 3.25 1 6 1c1.34 0 2.61.48 3.56 1.36.92.86 1.44 1.97 1.44 3.14 0 2.94-3.14 7.02-5 9.05zM8 5.5c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="personal_info_text">School: 1231 SW 3rd Ave, Gainesville, FL 32601 <br>
+                            Permanent: 3049 New Bern Cove, Oviedo, FL 32765</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
