@@ -110,7 +110,7 @@ resizeHeight = function()
 
   else
   {
-    height3 = (progress.getBoundingClientRect().bottom + 100) - (skills.getBoundingClientRect().top);
+    height3 = (progress.getBoundingClientRect().bottom) - (skills.getBoundingClientRect().top);
     skills.style.height = height3 + "px";
   }
 
