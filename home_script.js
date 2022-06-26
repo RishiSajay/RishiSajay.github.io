@@ -88,31 +88,23 @@ message = document.querySelector('.message_container');
 
 resizeHeight = function()
 {
-  if(window.innerWidth <= 450)
+  if(window.innerWidth <= 500)
   {
     height1 = (introCard.getBoundingClientRect().bottom - 100) - (intro.getBoundingClientRect().top);
     intro.style.height = height1 + "px";
+    height3 = (progress.getBoundingClientRect().bottom) - (skills.getBoundingClientRect().top);
+    skills.style.height = height3 + "px";
   }
   else
   {
     height1 = (introCard.getBoundingClientRect().bottom + 200) - (intro.getBoundingClientRect().top);
     intro.style.height = height1 + "px";
+    height3 = (progress.getBoundingClientRect().bottom + 100) - (skills.getBoundingClientRect().top);
+    skills.style.height = height3 + "px";
   }
 
   height2 = (myPic.getBoundingClientRect().bottom + 130) - (aboutMe.getBoundingClientRect().top);
   aboutMe.style.height = height2 + "px";
-
-  if(window.innerWidth <= 500)
-  {
-    height3 = (progress.getBoundingClientRect().bottom) - (skills.getBoundingClientRect().top);
-    skills.style.height = height3 + "px";
-  }
-
-  else
-  {
-    height3 = (progress.getBoundingClientRect().bottom) - (skills.getBoundingClientRect().top);
-    skills.style.height = height3 + "px";
-  }
 
   height4 = (lastProject.getBoundingClientRect().bottom + 100) - (projects.getBoundingClientRect().top);
   projects.style.height = height4 + "px";
