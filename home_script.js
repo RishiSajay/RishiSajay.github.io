@@ -88,13 +88,21 @@ message = document.querySelector('.message_container');
 
 resizeHeight = function()
 {
-  height1 = (introCard.getBoundingClientRect().bottom + 200) - (intro.getBoundingClientRect().top);
-  intro.style.height = height1 + "px";
+  if(window.innerWidth <= 450)
+  {
+    height1 = (introCard.getBoundingClientRect().bottom) - (intro.getBoundingClientRect().top);
+    intro.style.height = height1 + "px";
+  }
+  else
+  {
+    height1 = (introCard.getBoundingClientRect().bottom + 200) - (intro.getBoundingClientRect().top);
+    intro.style.height = height1 + "px";
+  }
 
   height2 = (myPic.getBoundingClientRect().bottom + 100) - (aboutMe.getBoundingClientRect().top);
   aboutMe.style.height = height2 + "px";
 
-  height3 = (skillsBody.getBoundingClientRect().bottom + 100) - (skills.getBoundingClientRect().top);
+  height3 = (skillsBody.getBoundingClientRect().bottom + 150) - (skills.getBoundingClientRect().top);
   skills.style.height = height3 + "px";
 
   height4 = (lastProject.getBoundingClientRect().bottom + 100) - (projects.getBoundingClientRect().top);
