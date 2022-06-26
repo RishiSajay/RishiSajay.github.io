@@ -50,7 +50,7 @@ let weather =
     {
         fetch
         (
-            "http://api.openweathermap.org/geo/1.0/zip?zip="
+            "https://api.openweathermap.org/geo/1.0/zip?zip="
             + zip
             + "&limit=1&appid="
             + this.apiKey
