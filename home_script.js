@@ -102,7 +102,7 @@ resizeHeight = function()
   height2 = (myPic.getBoundingClientRect().bottom + 130) - (aboutMe.getBoundingClientRect().top);
   aboutMe.style.height = height2 + "px";
 
-  if(window.innerWidth <= 450)
+  if(window.innerWidth <= 500)
   {
     height3 = (progress.getBoundingClientRect().bottom) - (skills.getBoundingClientRect().top);
     skills.style.height = height3 + "px";
