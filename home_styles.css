@@ -531,6 +531,12 @@ intro content
         margin-top: 50px;
         zoom: 0.8;
     }  
+
+    .social_media
+    {
+        margin-left: 1px;
+    }
+    
     .intro_card_container
     {
         zoom: 0.8;
