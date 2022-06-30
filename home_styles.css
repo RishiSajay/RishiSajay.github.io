@@ -294,7 +294,6 @@ intro content
 {
     display: flex;
     justify-content: center;
-    height: 100vh;
     background-color: black;
 }
 
@@ -531,12 +530,10 @@ intro content
         margin-top: 50px;
         zoom: 0.8;
     }  
-
     .social_media
     {
         margin-left: 1px;
     }
-    
     .intro_card_container
     {
         zoom: 0.8;
@@ -799,6 +796,39 @@ Skills section
     margin-left: 1rem;
 }
 
+/* Circle annimations */
+@keyframes circle-animation1
+{
+    0% 
+    {
+      stroke-dashoffset: -360;
+    }
+    50% 
+    {
+      stroke-dashoffset: 0;
+    }
+    100% 
+    {
+        stroke-dashoffset: 360;
+    }
+}
+
+@keyframes circle-animation2
+{
+    0% 
+    {
+      stroke-dashoffset: 360;
+    }
+    50% 
+    {
+      stroke-dashoffset: 0;
+    }
+    100% 
+    {
+        stroke-dashoffset: -360;
+    }
+}
+
 /*Python*/
 .python
 {
@@ -811,18 +841,29 @@ Skills section
 .python_svg
 {
     background: none;
-    transform: rotate(-16deg);
+    transform: rotate(0deg);
 }
 
+/*
 .python_svg circle 
 {
     fill: none;
     stroke: url(#linear1);
     stroke-width: 6px;
     stroke-dasharray: 288;
+}*/
+
+.circle_svg circle 
+{
+    fill: none;
+    stroke: url(#linear1);
+    stroke-width: 6px;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    animation: circle-animation1 6s linear infinite;
 }
   
-.python_text
+.skill_title
 {
     background: none;
     font-size: 1.1rem;
@@ -831,6 +872,14 @@ Skills section
     bottom: 130px;
     text-align: center;
     width: 60px;
+}
+
+.skill_level
+{
+    background: none;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 165px;
 }
 
 /*c++*/
@@ -842,30 +891,12 @@ Skills section
     position: relative;
 }
 
-.c_plus_plus_svg
-{
-    background: none;
-    transform: rotate(-55deg);
-}
-
 .c_plus_plus circle 
 {
-    fill: none;
     stroke: url(#linear2);
-    stroke-width: 6px;
-    stroke-dasharray: 324;
+    animation: circle-animation2 6s linear infinite;
 }
   
-.c_plus_plus_text
-{
-    background: none;
-    font-size: 1.1rem;
-    position: relative;
-    left: 31px;
-    bottom: 130px;
-    text-align: center;
-    width: 60px;
-}
 
 /*java*/
 .java
@@ -876,30 +907,12 @@ Skills section
     position: relative;
 }
 
-.java_svg
-{
-    background: none;
-    transform: rotate(-35deg);
-}
 
 .java circle 
 {
-    fill: none;
     stroke: url(#linear3);
-    stroke-width: 6px;
-    stroke-dasharray: 306;
 }
   
-.java_text
-{
-    background: none;
-    font-size: 1.1rem;
-    position: relative;
-    left: 31px;
-    bottom: 130px;
-    text-align: center;
-    width: 60px;
-}
 
 /*html*/
 .html
@@ -911,29 +924,10 @@ Skills section
     position: relative;
 }
 
-.html_svg
-{
-    background: none;
-    transform: rotate(75deg);
-}
-
 .html circle 
 {
-    fill: none;
     stroke: url(#linear4);
-    stroke-width: 6px;
-    stroke-dasharray: 198;
-}
-  
-.html_text
-{
-    background: none;
-    font-size: 1.1rem;
-    position: relative;
-    left: 31px;
-    bottom: 130px;
-    text-align: center;
-    width: 60px;
+    animation: circle-animation2 6s linear infinite;
 }
 
 /*css*/
@@ -946,29 +940,10 @@ Skills section
     position: relative;
 }
 
-.css_svg
-{
-    background: none;
-    transform: rotate(20deg);
-}
 
 .css circle 
 {
-    fill: none;
     stroke: url(#linear5);
-    stroke-width: 6px;
-    stroke-dasharray: 252;
-}
-  
-.css_text
-{
-    background: none;
-    font-size: 1.1rem;
-    position: relative;
-    left: 31px;
-    bottom: 130px;
-    text-align: center;
-    width: 60px;
 }
 
 /*javascript*/
@@ -981,30 +956,10 @@ Skills section
     position: relative;
 }
 
-.javascript_svg
-{
-    background: none;
-    transform: rotate(-20deg);
-}
-
 .javascript circle 
 {
-    fill: none;
     stroke: url(#linear6);
-    stroke-width: 6px;
-    stroke-dasharray: 144;
-    stroke-dashoffset: 145;
-}
-  
-.javascript_text
-{
-    background: none;
-    font-size: 1.1rem;
-    position: relative;
-    left: 31px;
-    bottom: 130px;
-    text-align: center;
-    width: 60px;
+    animation: circle-animation2 6s linear infinite;
 }
 
 /*Unity*/
@@ -1016,29 +971,9 @@ Skills section
     position: relative;
 }
 
-.unity_svg
+.unity circle 
 {
-    background: none;
-    transform: rotate(70deg);
-}
-
-.unity_svg circle 
-{
-    fill: none;
     stroke: url(#linear7);
-    stroke-width: 6px;
-    stroke-dasharray: 198;
-}
-  
-.unity_text
-{
-    background: none;
-    font-size: 1.1rem;
-    position: relative;
-    left: 31px;
-    bottom: 130px;
-    text-align: center;
-    width: 60px;
 }
 
 /*machine learning*/
@@ -1050,30 +985,17 @@ Skills section
     position: relative;
 }
 
-.ml_svg
-{
-    background: none;
-    transform: rotate(55deg);
-}
-
 .ml circle 
 {
-    fill: none;
     stroke: url(#linear8);
-    stroke-width: 6px;
-    stroke-dasharray: 216;
-    stroke-dashoffset: 0;
+    animation: circle-animation2 6s linear infinite;
 }
-  
-.ml_text
+
+.ml .skill_title
 {
-    background: none;
+    left: 26px;
     font-size: 0.8rem;
-    position: relative;
-    left: 31px;
-    bottom: 120px;
-    text-align: center;
-    width: 60px;
+    margin-bottom: 42px;
 }
 
 /*Matlab*/
@@ -1085,30 +1007,11 @@ Skills section
     position: relative;
 }
 
-.matlab_svg
-{
-    background: none;
-    transform: rotate(-35deg);
-}
-
 .matlab circle 
 {
-    fill: none;
     stroke: url(#linear9);
-    stroke-width: 6px;
-    stroke-dasharray: 306;
 }
-  
-.matlab_text
-{
-    background: none;
-    font-size: 1.1rem;
-    position: relative;
-    left: 31px;
-    bottom: 130px;
-    text-align: center;
-    width: 60px;
-}
+
 
 .skills_text
 {
