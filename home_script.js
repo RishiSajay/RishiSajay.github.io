@@ -17,10 +17,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor =>
 doc = document.documentElement;
 window.addEventListener("scroll", function(event)
 {
-    navbar = document.querySelector('.navbar');
-    aboutMe = document.querySelector('.about_me_container');
-    skills = document.querySelector('.skills_container');
-    projects = document.querySelector('.projects_container');
+    navbar = this.document.querySelector('.navbar');
+    aboutMe = this.document.querySelector('.about_me_container');
+    skills = this.document.querySelector('.skills_container');
+    projects = this.document.querySelector('#projects_id');
     contact = this.document.querySelector('.contact_me_container');
     var top  = this.scrollY;
 
@@ -53,21 +53,11 @@ window.addEventListener("scroll", function(event)
 });
 /////////////////////////////////////////////////////////////////////////////////////
 
-//mobile navbar functionality
-const menu1 = document.querySelector('#mobile-menu');
-const menuLinks = document.querySelector('.navbar_menu');
-
-menu1.addEventListener('click', function()
-{
-    menu1.classList.toggle('is-active');
-    menuLinks.classList.toggle('active');
-});
-/////////////////////////////////////////////////////////////////////////////////////
 
 
 //change background height based on lowest element location for each section. Useful to adjust to all screen sizes ie mobile, ipad, etc
 //intro
-intro = document.querySelector('.home_container');
+home = document.querySelector('.home_container');
 introCard = document.querySelector('.intro_card_container');
 
 //about me
@@ -90,13 +80,13 @@ resizeHeight = function()
 {
   if(window.innerWidth <= 500)
   {
-    height1 = (introCard.getBoundingClientRect().bottom) - (intro.getBoundingClientRect().top);
-    intro.style.height = height1 + "px";
+    height1 = (introCard.getBoundingClientRect().bottom) - (home.getBoundingClientRect().top);
+    home.style.height = height1 + "px";
   }
   else
   {
-    height1 = (introCard.getBoundingClientRect().bottom + 200) - (intro.getBoundingClientRect().top);
-    intro.style.height = height1 + "px";
+    height1 = (introCard.getBoundingClientRect().bottom + 200) - (home.getBoundingClientRect().top);
+    home.style.height = height1 + "px";
   }
 
   height2 = (myPic.getBoundingClientRect().bottom + 150) - (aboutMe.getBoundingClientRect().top);
@@ -116,6 +106,26 @@ resizeHeight = function()
 window.onload = resizeHeight;
 window.addEventListener("resize", resizeHeight);
 /////////////////////////////////////////////////////////////////////////////////////
+
+//mobile navbar functionality
+const menu1 = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.navbar_menu');
+const intro = document.querySelector('.intro')
+
+menu1.addEventListener('click', function()
+{
+    menu1.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
+
+    home.classList.toggle('active')
+    intro.classList.toggle('active')
+    aboutMe.classList.toggle('active')
+    skills.classList.toggle('active')
+    projects.classList.toggle('active')
+    contact.classList.toggle('active')
+});
+/////////////////////////////////////////////////////////////////////////////////////
+
 
 //info card functionality
 const card = document.querySelector('.intro_card');
