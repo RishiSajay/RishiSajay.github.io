@@ -587,7 +587,6 @@ About me content
 
 .about_me_container
 {
-    height: 100vh;
     background: white;
     display: flex;
     align-items: center;
@@ -768,7 +767,6 @@ Skills section
 
 .skills_container
 {
-    height: 100vh;
     background: black;
     display: flex;
     align-items: center;
@@ -1189,7 +1187,6 @@ Projects section
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 160vh;
     transition: 0.3s ease
 }
 
@@ -1511,7 +1508,6 @@ Contact Me section
 */
 .contact_me_container
 {
-    height: 100vh;
     background: black;
     display: flex;
     align-items: center;
