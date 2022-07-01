@@ -136,6 +136,7 @@ navbar content
 
 .navbar .menu_item
 {
+    color: white;
     border-radius: 10px;
     margin: 5px;
 }
@@ -143,7 +144,7 @@ navbar content
 
 .menu_links
 {
-    color: #fff;
+    color: inherit;
     display: flex;
     align-items: center;
     text-decoration: none;
