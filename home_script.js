@@ -20,7 +20,7 @@ window.addEventListener("scroll", function(event)
     navbar = this.document.querySelector('.navbar');
     aboutMe = this.document.querySelector('.about_me_container');
     skills = this.document.querySelector('.skills_container');
-    projects = this.document.querySelector('#projects_id');
+    projects = this.document.querySelector('.projects_title');
     contact = this.document.querySelector('.contact_me_container');
     var top  = this.scrollY;
 
@@ -39,7 +39,7 @@ window.addEventListener("scroll", function(event)
         navbar.classList.remove('projects');
         navbar.classList.add('skills');
     }
-    if (top > (projects.getBoundingClientRect().top + this.scrollY - 80))
+    if (top > (projects.getBoundingClientRect().top + this.scrollY - 150))
     {
         navbar.classList.remove('skills');
         navbar.classList.remove('contact');
