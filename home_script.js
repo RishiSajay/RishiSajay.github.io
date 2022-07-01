@@ -20,7 +20,7 @@ window.addEventListener("scroll", function(event)
     navbar = this.document.querySelector('.navbar');
     aboutMe = this.document.querySelector('.about_me_container');
     skills = this.document.querySelector('.skills_container');
-    projects = this.document.querySelector('.projects_title');
+    projects = this.document.querySelector('.projects_container');
     contact = this.document.querySelector('.contact_me_container');
     var top  = this.scrollY;
 
