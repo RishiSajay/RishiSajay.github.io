@@ -39,7 +39,7 @@ window.addEventListener("scroll", function(event)
         navbar.classList.remove('projects');
         navbar.classList.add('skills');
     }
-    if (top > (projects.getBoundingClientRect().top + this.scrollY - 150))
+    if (top > (skills.getBoundingClientRect().bottom + this.scrollY - 80))
     {
         navbar.classList.remove('skills');
         navbar.classList.remove('contact');
