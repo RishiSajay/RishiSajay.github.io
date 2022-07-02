@@ -217,6 +217,7 @@ Mini nav bar
         width: 100vw;
         height: 100vh;
         backdrop-filter: none;
+        visibility: hidden;
         transition: 0.3s;
     }
 
@@ -240,6 +241,7 @@ Mini nav bar
         width: 100vw;
         height: 100vh;
         backdrop-filter: blur(10px);
+        visibility: visible;
         transition: 0.3s;
     }
     /*
