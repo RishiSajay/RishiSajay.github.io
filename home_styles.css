@@ -3,6 +3,7 @@ body
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     /*font-family: 'Noto Sans', sans-serif;*/
     font-family: 'Gentium Book Plus', serif;
     background-color: black;
@@ -115,7 +116,7 @@ navbar content
     justify-content: center;
     display: flex;
     margin-top: 20px;
-    color: white;
+    color: #7E7F76;
     /*background-image: linear-gradient(to top, #7908E4 0%, #00EFE7 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;*/
@@ -199,7 +200,6 @@ Mini nav bar
         display: grid;
         grid-template-columns: auto;
         position: relative;
-        background-color: #507481;
         margin: 0 auto;
         left: 0;
         bottom: 0;
@@ -211,9 +211,18 @@ Mini nav bar
         transition: all 0.3s ease;
     }
 
+    .navbar_menu_container
+    {
+        margin: 0 auto;
+        width: 100vw;
+        height: 100vh;
+        backdrop-filter: none;
+        transition: 0.3s;
+    }
+
     .navbar_menu.active
     {
-        background-color: #507481;
+        background-color: #4E5050;
         opacity: 1;
         margin: 0 auto;
         left: 0;
@@ -222,14 +231,48 @@ Mini nav bar
         height: 50vh;
         width: 85vw;
         border-radius: 20px;
-        transition: 0.3s;
+        transition: all 0.3s ease;
     }
 
+    .navbar_menu_container.active
+    {
+        margin: 0 auto;
+        width: 100vw;
+        height: 100vh;
+        backdrop-filter: blur(10px);
+        transition: 0.3s;
+    }
+    /*
+    .navbar_menu
+    {
+        display: grid;
+        grid-template-columns: auto;
+        position: absolute;
+        top: -20px;
+        right: -1000px;
+        height: 100vh;
+        width: 50vw;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .navbar_menu.active
+    {
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(8px);
+        opacity: 1;
+        top: -20px;
+        right: 0px;
+        height: 100vh;
+        width: 100vw;
+        transition: all 0.3s ease;
+    }
+*/
     .menu_item
     {
         position: relative;
         right: 20px;
-        background-color: black;
+        background-color: none;
         padding: 0px 20px 0 0;
     }
     
@@ -280,37 +323,6 @@ Mini nav bar
         transform: translateY(-7px) rotate(45deg);
     }
 
-    /*blur all content*/
-    .home_container.active
-    {
-        filter: blur(10px);
-        transition: 0.3s ease;
-    }
-    .intro.active
-    {
-
-    }
-
-    .about_me_container.active
-    {
-        filter: blur(10px);
-        transition: 0.3s ease
-    }
-    .skills_container.active
-    {
-        filter: blur(10px);
-        transition: 0.3s ease
-    }
-    .projects_container.active
-    {
-        filter: blur(10px);
-        transition: 0.3s ease
-    }
-    .contact_me_container.active
-    {
-        filter: blur(10px);
-        transition: 0.3s ease
-    }
 }
 
 /*
@@ -324,7 +336,8 @@ intro content
     display: flex;
     justify-content: center;
     background-color: black;
-    transition: 0.3s ease
+    transition: 0.3s ease;
+    height: 100vh
 }
 
 
@@ -365,7 +378,7 @@ intro content
     margin-top: 0px;
     margin-bottom: 0;
     bottom: 60px;
-    right: 15px;
+    right: 12px;
     font-size: 14rem;
     /*background-image: linear-gradient(to right, #00229E, #00EFE7);*/
     background-image: linear-gradient(to right, #560988 0%, #00EFE7 100%);
@@ -379,6 +392,7 @@ intro content
 {
     position: relative;
     bottom: 120px;
+    right: 2px;
 }
 
 .social_media_links
@@ -515,6 +529,7 @@ intro content
 
     .rishi
     {
+        margin-top: 20px;
         font-size: 12rem;
     }
 
@@ -526,8 +541,8 @@ intro content
 
     .social_media
     {
-        margin-top: 5px;
-        right: 4px;
+        margin-top: 10px;
+        right: 2px;
     }
 
     .social_media_links
@@ -811,13 +826,13 @@ Skills section
 {
     display: flex;
     position: relative;
-    bottom: 9rem;
+    bottom: 0rem;
 }
 .row3
 {
     display: flex;
     position: relative;
-    top: 2rem;
+    bottom: 00rem;
 }
 
 .skill
@@ -892,8 +907,8 @@ Skills section
     }
 }
 
-/*Python*/
-.python
+/*C++*/
+.c_plus_plus
 {
     text-align: center;
     background: none;
@@ -901,11 +916,6 @@ Skills section
     position: relative;
 }
 
-.python_svg
-{
-    background: none;
-    transform: rotate(0deg);
-}
 
 /*
 .python_svg circle 
@@ -945,8 +955,8 @@ Skills section
     bottom: 165px;
 }
 
-/*c++*/
-.c_plus_plus
+/*python*/
+.python
 {
     text-align: center;
     background: none;
@@ -954,7 +964,7 @@ Skills section
     position: relative;
 }
 
-.c_plus_plus circle 
+.python circle 
 {
     stroke: url(#linear2);
     animation: circle_animation3 8s linear infinite;
@@ -977,56 +987,6 @@ Skills section
     animation: circle_animation3 8s linear infinite;
 }
   
-
-/*html*/
-.html
-{
-    text-align: center;
-    background: none;
-    height: 118px;
-    top: 10rem;
-    position: relative;
-}
-
-.html circle 
-{
-    stroke: url(#linear4);
-    animation: circle_animation2 8s linear infinite;
-}
-
-/*css*/
-.css
-{
-    text-align: center;
-    background: none;
-    height: 118px;
-    top: 10rem;
-    position: relative;
-}
-
-
-.css circle 
-{
-    stroke: url(#linear5);
-    animation: circle_animation2 8s linear infinite;
-}
-
-/*javascript*/
-.javascript
-{
-    text-align: center;
-    background: none;
-    height: 118px;
-    top: 10rem;
-    position: relative;
-}
-
-.javascript circle 
-{
-    stroke: url(#linear6);
-    animation: circle_animation2 8s linear infinite;
-}
-
 /*Unity*/
 .unity
 {
@@ -1038,8 +998,8 @@ Skills section
 
 .unity circle 
 {
-    stroke: url(#linear7);
-    animation: circle_animation1 8s linear infinite;
+    stroke: url(#linear4);
+    animation: circle_animation2 8s linear infinite;
 }
 
 /*machine learning*/
@@ -1053,8 +1013,8 @@ Skills section
 
 .ml circle 
 {
-    stroke: url(#linear8);
-    animation: circle_animation1 8s linear infinite;
+    stroke: url(#linear5);
+    animation: circle_animation2 8s linear infinite;
 }
 
 .ml .skill_title
@@ -1075,8 +1035,8 @@ Skills section
 
 .matlab circle 
 {
-    stroke: url(#linear9);
-    animation: circle_animation1 8s linear infinite;
+    stroke: url(#linear6);
+    animation: circle_animation2 8s linear infinite;
 }
 
 
@@ -1092,6 +1052,53 @@ Skills section
 {
     font-size: 1.5rem;
 }
+
+/*javascript*/
+.javascript
+{
+    text-align: center;
+    background: none;
+    height: 118px;
+    position: relative;
+}
+
+.javascript circle 
+{
+    stroke: url(#linear7);
+    animation: circle_animation1 8s linear infinite;
+}
+
+/*css*/
+.css
+{
+    text-align: center;
+    background: none;
+    height: 118px;
+    position: relative;
+}
+
+
+.css circle 
+{
+    stroke: url(#linear8);
+    animation: circle_animation1 8s linear infinite;
+}
+
+/*html*/
+.html
+{
+    text-align: center;
+    background: none;
+    height: 118px;
+    position: relative;
+}
+
+.html circle 
+{
+    stroke: url(#linear9);
+    animation: circle_animation1 8s linear infinite;
+}
+
 
 .mark2
 {

@@ -78,6 +78,7 @@ message = document.querySelector('.message_container');
 
 resizeHeight = function()
 {
+  /*
   if(window.innerWidth <= 500)
   {
     height1 = (introCard.getBoundingClientRect().bottom) - (home.getBoundingClientRect().top);
@@ -87,7 +88,7 @@ resizeHeight = function()
   {
     height1 = (introCard.getBoundingClientRect().bottom + 200) - (home.getBoundingClientRect().top);
     home.style.height = height1 + "px";
-  }
+  }*/
 
   height2 = (myPic.getBoundingClientRect().bottom + 150) - (aboutMe.getBoundingClientRect().top);
   aboutMe.style.height = height2 + "px";
@@ -110,20 +111,41 @@ window.addEventListener("resize", resizeHeight);
 //mobile navbar functionality
 const menu1 = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar_menu');
-const intro = document.querySelector('.intro')
+const menuContainer = document.querySelector('.navbar_menu_container');
+//const intro = document.querySelector('.intro')
 
+//toggle navbar when you click the 3 bars
 menu1.addEventListener('click', function()
 {
     menu1.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
-
-    home.classList.toggle('active')
-    intro.classList.toggle('active')
-    aboutMe.classList.toggle('active')
-    skills.classList.toggle('active')
-    projects.classList.toggle('active')
-    contact.classList.toggle('active')
+    menuContainer.classList.toggle('active');
+    //home.classList.toggle('active')
+    //intro.classList.toggle('active')
+    //aboutMe.classList.toggle('active')
+    //skills.classList.toggle('active')
+    //projects.classList.toggle('active')
+    //contact.classList.toggle('active')
 });
+
+//disable active class if menu item is clicked
+menuLinks.addEventListener('click', function()
+{
+  if(window.innerWidth <= 1000)
+  {
+    menu1.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
+    menuContainer.classList.toggle('active');
+
+    //home.classList.toggle('active')
+    //intro.classList.toggle('active')
+    //aboutMe.classList.toggle('active')
+    //skills.classList.toggle('active')
+    //projects.classList.toggle('active')
+    //contact.classList.toggle('active')
+  }
+});
+
 /////////////////////////////////////////////////////////////////////////////////////
 
 
