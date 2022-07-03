@@ -1259,6 +1259,7 @@ Projects section
     position: absolute;
     left: 30px;
     top: 275px;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .projects_card:nth-child(1) .powered_by
@@ -1278,6 +1279,7 @@ Projects section
     top: 320px;
     left: 30px;
     font-size: 1rem;
+    font-family: 'Noto Sans', sans-serif;
     cursor: pointer;
 }
 
