@@ -141,7 +141,6 @@ menuLinks.addEventListener('click', function()
     menuLinks.classList.toggle('active');
     menuContainer.classList.toggle('active');
   }
-
 });
 
 /////////////////////////////////////////////////////////////////////////////////////
