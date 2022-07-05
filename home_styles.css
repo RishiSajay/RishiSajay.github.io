@@ -1444,11 +1444,6 @@ Projects section
 
 @media screen and (max-width: 1200px)
 {
-    .projects_container
-    {
-        /*height: 200vh;*/
-    }
-
     .projects_intro
     {
         text-align: center;
@@ -1474,6 +1469,16 @@ Projects section
         width: 300px;
     }
 
+    .powered_by
+    {
+        left: 20px
+    }
+
+    .card_button
+    {
+        left: 20px
+    }
+
     /*change aeps card*/
     .projects_card:nth-child(3) p:after
     {
@@ -1482,7 +1487,7 @@ Projects section
 
     .projects_card:nth-child(3) .card_button:nth-of-type(2)
     {
-        left: 30px;
+        left: 20px;
     }
 
     .projects_card:nth-child(3) .card_button:nth-of-type(1)
