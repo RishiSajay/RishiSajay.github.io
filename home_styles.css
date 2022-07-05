@@ -1045,6 +1045,11 @@ Skills section
     position: relative;
 }
 
+.javascript .skill_title
+{
+    left: 28px;
+}
+
 .javascript circle 
 {
     stroke: url(#linear7);
