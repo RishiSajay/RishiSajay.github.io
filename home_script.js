@@ -78,7 +78,7 @@ message = document.querySelector('.message_container');
 
 resizeHeight = function()
 {
-  /*
+  
   if(window.innerWidth <= 500)
   {
     height1 = (introCard.getBoundingClientRect().bottom) - (home.getBoundingClientRect().top);
@@ -88,7 +88,7 @@ resizeHeight = function()
   {
     height1 = (introCard.getBoundingClientRect().bottom + 200) - (home.getBoundingClientRect().top);
     home.style.height = height1 + "px";
-  }*/
+  }
 
   height2 = (myPic.getBoundingClientRect().bottom + 150) - (aboutMe.getBoundingClientRect().top);
   aboutMe.style.height = height2 + "px";

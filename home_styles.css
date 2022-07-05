@@ -788,7 +788,7 @@ Skills section
     align-items: center;
     flex-direction: column;
     color: white;
-    transition: 0.3s ease
+    transition: 0.3s ease;
 }
 
 .skills_title
@@ -802,7 +802,6 @@ Skills section
 .skills_body_container
 {
     display: flex;
-    flex-direction: row;
     max-width: 1600px;
 }
 
@@ -811,7 +810,7 @@ Skills section
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-left: 5vw;
+    margin-left: 0px;
     width: 450px;
     height: 450px;
     top: 30px;
@@ -832,7 +831,7 @@ Skills section
 {
     display: flex;
     position: relative;
-    bottom: 00rem;
+    bottom: 0rem;
 }
 
 .skill
@@ -1039,20 +1038,6 @@ Skills section
     animation: circle_animation2 8s linear infinite;
 }
 
-
-.skills_text
-{
-    margin-top: 50px;
-    position: relative;
-    margin-left: 18vw;
-    width: 35vw;
-}
-
-.skills_text_intro
-{
-    font-size: 1.5rem;
-}
-
 /*javascript*/
 .javascript
 {
@@ -1104,6 +1089,21 @@ Skills section
     animation: circle_animation1 8s linear infinite;
 }
 
+.skills_text
+{
+    margin-top: 50px;
+    position: relative;
+    margin-left: 10vw;
+    left: 90px;
+    width: 35vw;
+    max-width: 600px;
+    min-width: 400px;
+}
+
+.skills_text_intro
+{
+    font-size: 1.5rem;
+}
 
 .mark2
 {
@@ -1118,11 +1118,6 @@ Skills section
 
 @media screen and (max-width: 1100px)
 {
-    .skills_container
-    {
-        /*height: 150vh;*/
-    }
-
     .skills_body_container
     {
         display: flex;
@@ -1148,11 +1143,6 @@ Skills section
 
 @media screen and (max-width: 600px)
 {
-    .skills_container
-    {
-        /*height: 160vh;*/
-    }
-
     
     .skills_text
     {
@@ -1162,10 +1152,6 @@ Skills section
 
 @media screen and (max-width: 450px)
 {
-    .skills_container
-    {
-        /*height: 140vh;*/
-    }
 
     .progress_container
     {
@@ -1526,20 +1512,20 @@ Contact Me section
     text-underline-offset: 15px;
 }
 
-
 .contact_me_container_inner
 {
     margin-top: 25px;
     display: flex;
     justify-content: center;
     flex-direction: row;
+    max-width: 1600px;
 }
 
 .message_container
 {
     width: 45vw;
-    margin-left: 7vw;
-    
+    max-width: 1000px;
+    margin-left: 75px;
 }
 
 .contact_me_text_intro
@@ -1569,10 +1555,12 @@ Contact Me section
     flex-direction: row;
     margin-top: 10px;
     width: 45vw;
+    max-width: 1000px;
 }
 
 .form_group
 {
+    max-width: 1000px;
     border: none;
     outline: none;
     padding: 0.5rem;
