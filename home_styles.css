@@ -244,32 +244,12 @@ Mini nav bar
         visibility: visible;
         transition: 0.3s;
     }
-    /*
-    .navbar_menu
+
+    .home_container.active .about_me_container.active .skills_container.active .progress_container.active .contact_me_container.active
     {
-        display: grid;
-        grid-template-columns: auto;
-        position: absolute;
-        top: -20px;
-        right: -1000px;
-        height: 100vh;
-        width: 50vw;
-        opacity: 0;
-        transition: all 0.3s ease;
+        filter: blur(10px)
     }
 
-    .navbar_menu.active
-    {
-        background-color: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(8px);
-        opacity: 1;
-        top: -20px;
-        right: 0px;
-        height: 100vh;
-        width: 100vw;
-        transition: all 0.3s ease;
-    }
-*/
     .menu_item
     {
         position: relative;
@@ -324,6 +304,7 @@ Mini nav bar
     {
         transform: translateY(-7px) rotate(45deg);
     }
+
 
 }
 
@@ -1453,20 +1434,8 @@ Projects section
     }
 }
 
-@media screen and (max-width: 770px)
-{
-    .projects_container
-    {
-        /*height: 320vh;*/
-    }
-}
-
 @media screen and (max-width: 450px)
 {
-    .projects_container
-    {
-        /*height: 290vh;*/
-    }
 
     .projects_container
     {
@@ -1499,19 +1468,13 @@ Projects section
         display: none;
     }
 
+    /*update flight optimizer buttons*/
     .projects_card:nth-child(5) .card_button:nth-of-type(1)
     {
         left: 190px;
     }
 }
 
-@media screen and (max-width: 380px)
-{
-    .projects_container
-    {
-        /*height: 360vh;*/
-    }
-}
 
 /*
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

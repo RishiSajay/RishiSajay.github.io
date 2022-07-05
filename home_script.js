@@ -120,12 +120,16 @@ menu1.addEventListener('click', function()
     menu1.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
     menuContainer.classList.toggle('active');
-    //home.classList.toggle('active')
-    //intro.classList.toggle('active')
-    //aboutMe.classList.toggle('active')
-    //skills.classList.toggle('active')
-    //projects.classList.toggle('active')
-    //contact.classList.toggle('active')
+
+    if (window.innerWidth <= 500)
+    {
+      home.classList.toggle('active')
+      aboutMe.classList.toggle('active')
+      skills.classList.toggle('active')
+      projects.classList.toggle('active')
+      contact.classList.toggle('active')
+    }
+
 });
 
 //disable active class if menu item is clicked
@@ -136,14 +140,8 @@ menuLinks.addEventListener('click', function()
     menu1.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
     menuContainer.classList.toggle('active');
-
-    //home.classList.toggle('active')
-    //intro.classList.toggle('active')
-    //aboutMe.classList.toggle('active')
-    //skills.classList.toggle('active')
-    //projects.classList.toggle('active')
-    //contact.classList.toggle('active')
   }
+
 });
 
 /////////////////////////////////////////////////////////////////////////////////////
