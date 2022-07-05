@@ -121,7 +121,7 @@ menu1.addEventListener('click', function()
     menuLinks.classList.toggle('active');
     menuContainer.classList.toggle('active');
 
-    if (window.innerWidth <= 500)
+    if (window.innerWidth <= 450)
     {
       home.classList.toggle('active')
       aboutMe.classList.toggle('active')
@@ -140,6 +140,15 @@ menuLinks.addEventListener('click', function()
     menu1.classList.toggle('is-active');
     menuLinks.classList.toggle('active');
     menuContainer.classList.toggle('active');
+  }
+
+  if (window.innerWidth <= 450)
+  {
+    home.classList.toggle('active')
+    aboutMe.classList.toggle('active')
+    skills.classList.toggle('active')
+    projects.classList.toggle('active')
+    contact.classList.toggle('active')
   }
 });
 

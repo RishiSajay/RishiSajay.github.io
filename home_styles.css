@@ -240,12 +240,29 @@ Mini nav bar
         margin: 0 auto;
         width: 100vw;
         height: 100vh;
-        backdrop-filter: blur(10px);
+        /*backdrop-filter: blur(10px);*/
         visibility: visible;
         transition: 0.3s;
     }
 
-    .home_container.active .about_me_container.active .skills_container.active .progress_container.active .contact_me_container.active
+    /*blur effect*/
+    .home_container.active 
+    {
+        filter: blur(10px)
+    }
+    .about_me_container.active 
+    {
+        filter: blur(10px)
+    }
+    .skills_container.active 
+    {
+        filter: blur(10px)
+    }
+    .progress_container.active 
+    {
+        filter: blur(10px)
+    }
+    .contact_me_container.active
     {
         filter: blur(10px)
     }
@@ -1047,7 +1064,7 @@ Skills section
 
 .javascript .skill_title
 {
-    left: 20px;
+    left: 27px;
 }
 
 .javascript circle 
