@@ -1135,6 +1135,7 @@ Skills section
     .skills_text
     {
         margin-left: 0;
+        left: 0;
         text-align: left;
         position: relative;
         width: 70vw;
@@ -1694,6 +1695,7 @@ Contact Me section
     .message_container
     {
         width: 70vw;
+        margin-left: 20px;
     }
 
     .message_intro
