@@ -1660,6 +1660,11 @@ Contact Me section
     margin-bottom: 20px;
 }
 
+.pi.phone_container
+{
+    margin-bottom: 10px;
+}
+
 .personal_info_icon
 {
     margin: 3px;
