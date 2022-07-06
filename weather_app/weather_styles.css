@@ -119,15 +119,15 @@ a
     color: #0BCEE9;
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 500px)
 {
     .card
     {
-        transform: scale(0.9);
+        transform: scale(0.75);
     }
 
     .card:hover
     {
-        transform: scale(0.9);
+        transform: scale(0.75);
     }
 }
