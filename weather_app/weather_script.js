@@ -130,7 +130,7 @@ let weather =
         }
         else
         {
-            this.fetchGeoPositionCity((document.querySelector(".search-bar").value).replace(/ /g, ""));
+            this.fetchGeoPositionCity(document.querySelector(".search-bar").value);
         }
     },
 };
