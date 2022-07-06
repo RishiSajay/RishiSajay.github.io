@@ -21,12 +21,13 @@ let weather =
         if(data === undefined || data.length == 0)
         {
             document.querySelector(".description").innerText = "Please enter a valid city name or zip code";
-            document.querySelector(".city").innerText = "";
+            document.querySelector(".city_country").innerText = "";
             document.querySelector(".icon").src = "";
             document.querySelector(".temp").innerText = "";
             document.querySelector(".humidity").innerText = "";
             document.querySelector(".low").innerText = "";
             document.querySelector(".high").innerText = "";
+            document.querySelector(".note").innerText = "";
         }
         else
         {
@@ -37,7 +38,7 @@ let weather =
                 + lat
                 + "&lon="
                 + lon
-                + "&units=metric&appid="
+                + "&units=imperial&appid="
                 + this.apiKey
             )
             .then((response) => response.json())
@@ -62,15 +63,16 @@ let weather =
     checkValidZipAndFetchWeather: function(data)
     {
         const {message} = data;
-        if(message === "not found")
+        if(message === "not found" || message === "invalid zip code")
         {
             document.querySelector(".description").innerText = "Please enter a valid city name or zip code";
-            document.querySelector(".city").innerText = "";
+            document.querySelector(".city_country").innerText = "";
             document.querySelector(".icon").src = "";
             document.querySelector(".temp").innerText = "";
             document.querySelector(".humidity").innerText = "";
             document.querySelector(".low").innerText = "";
             document.querySelector(".high").innerText = "";
+            document.querySelector(".note").innerText = "";
         }
         else
         {
@@ -81,7 +83,7 @@ let weather =
                 + lat
                 + "&lon="
                 + lon
-                + "&units=metric&appid="
+                + "&units=imperial&appid="
                 + this.apiKey
             )
             .then((response) => response.json())
@@ -98,19 +100,21 @@ let weather =
         //note: weather is an array
         const {main, description, icon} = data.weather[0]; 
         const {temp, temp_min, temp_max, humidity} = data.main;
+        const {country} = data.sys;
         
         //change text
-        document.querySelector(".city").innerText = "Weather in " + name;
+        document.querySelector(".city_country").innerText = "Weather in " + name + ", " + country;
         document.querySelector(".icon").src = 
             "https://openweathermap.org/img/wn/" + icon + ".png";
         document.querySelector(".description").innerText = description;
-        document.querySelector(".temp").innerText = temp + "°C";
+        document.querySelector(".temp").innerText = temp + "°F";
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
-        document.querySelector(".low").innerText = "Low: " + temp_min + "°C";
-        document.querySelector(".high").innerText = "High: " + temp_max + "°C";
+        document.querySelector(".low").innerText = "Low: " + temp_min + "°F";
+        document.querySelector(".high").innerText = "High: " + temp_max + "°F";
+        document.querySelector(".note").innerText = "";
         
         //change background
-        document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + description + "')"
+        document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + "clouds" + "')"
 
         //Show contents
         document.getElementsByClassName("weather")[0].style.visibility = "visible";
@@ -120,13 +124,13 @@ let weather =
     search: function()
     {
         var value = document.querySelector(".search-bar").value;
-        if ((value.replace(/ /g, "").length == 5) && !isNaN(parseInt(value)))
+        if (value.charCodeAt(0) >= 48 && value.charCodeAt(0) <= 57)
         {
             this.fetchGeoPositionZip((document.querySelector(".search-bar").value).replace(/ /g, ""));
         }
         else
         {
-            this.fetchGeoPositionCity(document.querySelector(".search-bar").value);
+            this.fetchGeoPositionCity((document.querySelector(".search-bar").value).replace(/ /g, ""));
         }
     },
 };

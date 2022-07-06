@@ -19,7 +19,7 @@
             </button>
         </div>
         <div class="weather">
-            <h2 class="city">Welcome to the Weather App!</h2>
+            <h2 class="city_country">Welcome to the Weather App!</h2>
             <div class="temp_container">
                 <h1 class="temp"></h1>
                 <div class="temp_container_inner">
@@ -29,9 +29,19 @@
             </div>
             <div class="combo">
                 <img src="" alt="" class= "icon" />
-                <div class="description">Please enter a city name or zip code(US only)</div>
+                <div class="description">Please enter (city name, country code) or (zip code, country code) <br>
+                     ex: gainesville, us || 32602, us<br>
+                </div>
             </div>
             <div class="humidity"></div>
+            <div class="note">                     
+                Note: Country code is optional, but highly recomended. Country codes are in 
+                <a href="https://www.iban.com/country-codes"target="_blank" rel="noopener noreferrer" >Alpha-2 format</a> 
+                (us, gb, etc) <br>
+                <br>
+                The api accepts various input, such as countries, continents, and even singular letters.
+                However, the results are largely innacurate and confusing, so I recommend following the format above.
+            </div>
         </div>
     </div>
 </body>
