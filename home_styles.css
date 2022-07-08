@@ -240,7 +240,7 @@ Mini nav bar
         margin: 0 auto;
         width: 100vw;
         height: 100vh;
-        /*backdrop-filter: blur(10px);*/
+        backdrop-filter: blur(10px);
         visibility: visible;
         transition: 0.3s;
     }
@@ -1097,7 +1097,7 @@ Skills section
     left: 90px;
     width: 35vw;
     max-width: 600px;
-    min-width: 400px;
+    min-width: 200px;
 }
 
 .skills_text_intro
@@ -1158,23 +1158,14 @@ Skills section
     {
         margin-left: 10px;
     }
-}
 
-@media screen and (max-width: 450px)
-{
     .progress_container
     {
         zoom: 0.8;
     }
 }
 
-@media screen and (max-width: 380px)
-{
-    .skills_container
-    {
-        /*height: 170vh;*/
-    }
-}
+
 
 /*
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
