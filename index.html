@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /> <!--remove this line and the line above if errors occur-->
     <title>Home Page</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -153,7 +155,7 @@
                             <circle cx="60" cy="60" r="57" />
                         </svg>
                         <h6 class="skill_title">Python</h6>
-                        <p class="skill_level">Advanced</p>
+                        <p class="skill_level">Expert</p>
                     </div>
                     <div class="skill java">
                         <svg height="120" width="120" class="circle_svg">
@@ -257,12 +259,16 @@
                     A brief overview of my <mark class="mark2">skills and knowledge</mark>
                  </h3>
                 <p class="skills_paragraph">
-                    I am very fluent in Java, C++, MATLAB, and Python. I have the most experience in C++. I have recently been learning HTML, 
-                    Javascript, and CSS, which I hope to have demonstrated with this website.
-                    I have done multiple projects in Unity in high school and college. 
+                    I am very fluent in C++, Python, and Java. I have the most experience in C++, but many of my recent projects have been in Python. 
+                    Most of my object oriented programming experience has been in C++ and Java. 
+                    <br> <br>
+                    I have been learning HTML, Javascript, and CSS, which I hope to have demonstrated with this website.
+                    I have done multiple projects in Unity in high school and college, some of which are showcased below.                     
+                    I have experience with back end programming, as I have been developing a full stack mobile application, also showcased below.
+                    <br> <br>
                     I recently took an Applied Machine Learning course and have been looking into my own projects in the field of ML, as it is 
                     a topic that greatly interests me. 
-                    I have moderate experience in Scikit Learn and Keras, including neural networks. 
+                    I have moderate experience in Scikit Learn and Keras, including a variety of neural network architectures.  
                 </p>
             </div>
         </div>
@@ -274,11 +280,22 @@
         </h3>
         <div class="card_container">
             <div class="projects_card">
+                <h2>The Move</h2>
+                <p>Developing a full stack mobile app to help college students better plan their nights. 
+                    Students can view the most popular places to hang out on a day by day basis. Users can view others' plans as well
+                    as vote on their plans. Projected completion date: August 20th.
+                </p>
+                <h6 class="powered_by">Powered by Python and kivy</h6>
+                <!--<button class="card_button"><a href="weather.html" target="_blank" rel="noopener noreferrer">Download</a></button>-->
+                <button class="card_button"><a href="https://github.com/RishiSajay/TheMove" target="_blank" rel="noopener noreferrer">Github</a></button>
+            </div>
+            <div class="projects_card">
                 <h2>Weather App</h2>
                 <p>Website that provides real time weather information based on city name or zip code.
                 </p>
                 <h6 class="powered_by">Powered by HTML, Javascript, CSS, and the open weather map api</h6>
                 <button class="card_button"><a href="weather_app/index.html" target="_blank" rel="noopener noreferrer">Go to site</a></button>
+                <button class="card_button"><a href="https://github.com/RishiSajay/WeatherWebsite" target="_blank" rel="noopener noreferrer">Github</a></button>
             </div>
             <div class="projects_card">
                 <h2>KD Tree</h2>
@@ -290,22 +307,13 @@
                 <button class="card_button"><a href="https://github.com/RishiSajay/KDTree" target="_blank" rel="noopener noreferrer">Github</a></button>
             </div>
             <div class="projects_card">
-                <h2>AEPS</h2>
-                <p>Another Educational Physics Simulator! This game simulates basic physics concepts
-                    to help students better understand how they work.
+                <h2>PULSAR</h2>
+                <p>Pulsar is a local PvP 2D space fighter game inspired by Tank Trouble. Players are pit against each other in a 1v1 in a map with 
+                    lasers, asteroids, missiles, and more! Single player coming soon. <br>
                 </p>
-                <h6 class="powered_by">Powered by Unity</h6>
-                <button class="card_button"><a href="Files/Build.zip">Download Game</a></button>
-                <button class="card_button"><a href="https://github.com/RishiSajay/AEPS" target="_blank" rel="noopener noreferrer">Github</a></button>
-
-            </div>
-            <div class="projects_card">
-                <h2>Portfolio Website</h2>
-                <p>I developed this website using html, CSS, and JavaScript. Please feel free to look at my code 
-                    through Github!
-                </p>
-                <h6 class="powered_by">Powered by HTML, Javascript, and CSS</h6>
-                <button class="card_button"><a href="https://github.com/RishiSajay/PortfolioWebsite" target="_blank" rel="noopener noreferrer">Github</a></button>
+                <h6 class="powered_by">Powered by Unity and C#</h6>
+                <button class="card_button"><a href="Files/Pulsar_Build.zip">Download Game</a></button>
+                <button class="card_button"><a href="https://github.com/RishiSajay/Pulsar" target="_blank" rel="noopener noreferrer">Github</a></button>
             </div>
             <div class="projects_card">
                 <h2>Flight Optimizer</h2>
@@ -317,6 +325,25 @@
                 <button class="card_button"><a href="https://github.com/chasewrennufl/Project3bFinal" target="_blank" rel="noopener noreferrer">Github</a></button>
                 <button class="card_button"><a href="Files/flight_project_report.pdf" target="_blank" rel="noopener noreferrer">Documentation</a></button>
             </div>
+            <div class="projects_card">
+                <h2>Portfolio Website</h2>
+                <p>I developed this website using html, CSS, and JavaScript. Please feel free to look at my code 
+                    through Github!
+                </p>
+                <h6 class="powered_by">Powered by HTML, Javascript, and CSS</h6>
+                <button class="card_button"><a href="https://github.com/RishiSajay/PortfolioWebsite" target="_blank" rel="noopener noreferrer">Github</a></button>
+            </div>
+            <!--
+            <div class="projects_card">
+                <h2>AEPS</h2>
+                <p>Another Educational Physics Simulator! This game simulates basic physics concepts
+                    to help students better understand how they work.
+                </p>
+                <h6 class="powered_by">Powered by Unity and C#</h6>
+                <button class="card_button"><a href="Files/Build.zip">Download Game</a></button>
+                <button class="card_button"><a href="https://github.com/RishiSajay/AEPS" target="_blank" rel="noopener noreferrer">Github</a></button>
+            </div>
+            -->
         </div>
     </div>
     <div class="contact_me_container" id="contact_me_id">

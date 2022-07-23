@@ -4,6 +4,7 @@ body
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    width: 100%; 
     /*font-family: 'Noto Sans', sans-serif;*/
     font-family: 'Gentium Book Plus', serif;
     background-color: black;
@@ -89,7 +90,7 @@ navbar content
 
 .navbar.contact
 {
-    background: linear-gradient(to bottom, #29D228, black);
+    background: linear-gradient(to bottom, #0BB50A, black);
 }
 
 .navbar_container
@@ -116,7 +117,9 @@ navbar content
     justify-content: center;
     display: flex;
     margin-top: 20px;
-    color: #7E7F76;
+    color: #707C91;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: black;
     /*background-image: linear-gradient(to top, #7908E4 0%, #00EFE7 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;*/
@@ -156,8 +159,8 @@ navbar content
 
 .navbar .menu_item:hover
 {
-    color: #8A2DDC;
-    outline: #8A2DDC solid 2px;
+    color: #8C1CEF;
+    outline: #8C1CEF solid 2px;
     background-color: none;
     transition: none;
 }
@@ -171,15 +174,15 @@ navbar content
 
 .navbar.skills .menu_item:hover
 {
-    color: #BD215A;
-    outline: #BD215A solid 2px;
+    color: #D9145C;
+    outline: #D9145C solid 2px;
     transition: none;
 }
 
 .navbar.projects .menu_item:hover
 {
-    color: #F34B3A;
-    outline: #F34B3A solid 2px;
+    color: #F82D19;
+    outline: #F82D19 solid 2px;
     transition: none;
 }
 
@@ -930,9 +933,9 @@ Skills section
     fill: none;
     stroke: url(#linear1);
     stroke-width: 6px;
-    stroke-dasharray: 360;
-    stroke-dashoffset: 360;
-    animation: circle_animation3 8s linear infinite;
+    /*stroke-dasharray: 360;*/
+    stroke-dasharray: 90;
+    animation: circle_animation1 12s linear infinite;
 }
   
 .skill_title
@@ -966,7 +969,7 @@ Skills section
 .python circle 
 {
     stroke: url(#linear2);
-    animation: circle_animation3 8s linear infinite;
+    /*animation: circle_animation1 8s linear infinite;*/
 }
   
 
@@ -983,7 +986,7 @@ Skills section
 .java circle 
 {
     stroke: url(#linear3);
-    animation: circle_animation3 8s linear infinite;
+    /*animation: circle_animation1 8s linear infinite;*/
 }
   
 /*Unity*/
@@ -998,7 +1001,7 @@ Skills section
 .unity circle 
 {
     stroke: url(#linear4);
-    animation: circle_animation2 8s linear infinite;
+    /*animation: circle_animation1 8s linear infinite;*/
 }
 
 /*machine learning*/
@@ -1013,7 +1016,7 @@ Skills section
 .ml circle 
 {
     stroke: url(#linear5);
-    animation: circle_animation2 8s linear infinite;
+    /*animation: circle_animation1 8s linear infinite;*/
 }
 
 .ml .skill_title
@@ -1035,7 +1038,7 @@ Skills section
 .matlab circle 
 {
     stroke: url(#linear6);
-    animation: circle_animation2 8s linear infinite;
+    /*animation: circle_animation1 8s linear infinite;*/
 }
 
 /*javascript*/
@@ -1055,7 +1058,7 @@ Skills section
 .javascript circle 
 {
     stroke: url(#linear7);
-    animation: circle_animation1 8s linear infinite;
+    /*animation: circle_animation1 8s linear infinite;*/
 }
 
 /*css*/
@@ -1071,7 +1074,7 @@ Skills section
 .css circle 
 {
     stroke: url(#linear8);
-    animation: circle_animation1 8s linear infinite;
+    /*animation: circle_animation1 8s linear infinite;*/
 }
 
 /*html*/
@@ -1086,12 +1089,12 @@ Skills section
 .html circle 
 {
     stroke: url(#linear9);
-    animation: circle_animation1 8s linear infinite;
+    /*animation: circle_animation1 8s linear infinite;*/
 }
 
 .skills_text
 {
-    margin-top: 50px;
+    margin-top: 25px;
     position: relative;
     margin-left: 10vw;
     left: 90px;
@@ -1163,6 +1166,16 @@ Skills section
     {
         zoom: 0.8;
     }
+
+    /*
+    .circle_svg circle 
+    {
+        fill: none;
+        stroke-width: 6px;
+        stroke-dasharray: 90;
+        stroke-dashoffset: 0;
+        animation: none;
+    }*/
 }
 
 
@@ -1218,8 +1231,8 @@ Projects section
     width: 350px;
     border-radius: 20px;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, 
-    rgba(17,17,17,0.6) 100%), url('/images/weather_card_image.jpg');
-    background-size: cover;
+    rgba(17,17,17,0.6) 100%), url('/images/move_card_image.png');
+    background-size: 1000px;
     background-position: center;
     position: relative;
     color: #fff;
@@ -1231,7 +1244,7 @@ Projects section
     position: absolute;
     top: 0px;
     left: 30px;
-    color: #B15FC8;
+    color: #FF8700;
     font-size: 1.75rem;
 }
 
@@ -1241,11 +1254,6 @@ Projects section
     left: 30px;
     top: 275px;
     font-family: 'Noto Sans', sans-serif;
-}
-
-.projects_card:nth-child(1) .powered_by
-{
-    top: 260px;
 }
 
 .card_button
@@ -1270,6 +1278,12 @@ Projects section
     color: white;
     padding: 10px 20px 11px 20px;
 }
+
+.projects_card:nth-child(1) .card_button:nth-of-type(2)
+{
+    left: 230px;
+}
+
 .projects_card:hover
 {
     transform: scale(1.075);
@@ -1288,7 +1302,8 @@ Projects section
 /*reveal text*/
 .projects_card.active
 {
-    background: linear-gradient(to top, #8A6699 0%, #3A2A41 100%);
+    /*background: linear-gradient(to top, #E68007 0%, #F63005 100%);*/
+    background: linear-gradient(to top, #FFA234 0%, #F63005 100%);
     transition: 0.3s ease;
 }
 
@@ -1307,16 +1322,46 @@ Projects section
 {
     color: #f77062;
 }
-
 /*card 2*/
 .projects_card:nth-child(2)
+{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, 
+    rgba(17,17,17,0.6) 100%), url('/images/weather_card_image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.projects_card:nth-child(2) h2
+{
+    color: #B15FC8;
+}
+
+.projects_card:nth-child(2) .powered_by
+{
+    top: 260px;
+}
+
+.projects_card:nth-child(2) .card_button:nth-of-type(2)
+{
+    left: 230px;
+}
+
+/*reveal text*/
+.projects_card:nth-child(2).active
+{
+    background: linear-gradient(to top, #8A6699 0%, #3A2A41 100%);
+    transition: 0.3s ease;
+}
+
+/*card 3*/
+.projects_card:nth-child(3)
 {
     background-image: url('/images/kdtree_card_image.png');
     background-size: 550px;
     background-position: center;
 }
 
-.projects_card:nth-child(2) h2
+.projects_card:nth-child(3) h2
 {
     position: absolute;
     top: 0px;
@@ -1325,42 +1370,9 @@ Projects section
 }
 
 /*reveal text*/
-.projects_card:nth-child(2).active
-{
-    background: linear-gradient(to top, #28C384 0%, #02462A 100%);
-    transition: 0.3s ease;
-}
-
-/*card 3*/
-.projects_card:nth-child(3)
-{
-    background-image: url('/images/aeps_card_image.png');
-    background-size: 700px;
-    background-position: left top 110px;
-}
-
-.projects_card:nth-child(3) h2
-{
-    position: absolute;
-    top: 0px;
-    left: 30px;
-    color: #F63434;
-}
-
-.projects_card:nth-child(3) p:after
-{
-    content: "Download the zip file, unzip it, navigate to the build folder, and run the aeps file to play the game! Co-developers - Max LoGalbo, Stephen Nguyen.";
-}
-
-.projects_card:nth-child(3) .card_button:nth-of-type(2)
-{
-    left: 230px;
-}
-
-/*reveal text*/
 .projects_card:nth-child(3).active
 {
-    background: linear-gradient(to top, #FF0000 0%, black 100%);
+    background: linear-gradient(to top, #28C384 0%, #02462A 100%);
     transition: 0.3s ease;
 }
 
@@ -1368,8 +1380,8 @@ Projects section
 .projects_card:nth-child(4)
 {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, 
-    rgba(17,17,17,0.6) 100%), url('/images/website_card_image.svg');
-    background-size: 350px;
+    rgba(17,17,17,0.6) 100%), url('/images/pulsar_card_image.jpg');
+    background-size: 700px;
     background-position: center;
 }
 
@@ -1378,13 +1390,23 @@ Projects section
     position: absolute;
     top: 0px;
     left: 30px;
-    color: #1D79E8;
+    color: #0BA1BF;
+}
+
+.projects_card:nth-child(4) p:after
+{
+    content: "How to play: Download the zip file -> unzip -> run Pulsar.exe to play!";
+}
+
+.projects_card:nth-child(4) .card_button:nth-of-type(2)
+{
+    left: 230px;
 }
 
 /*reveal text*/
 .projects_card:nth-child(4).active
 {
-    background: linear-gradient(to top, #6F9FEE 0%, #0728B9 100%);
+    background: linear-gradient(to top, #1AC3E5 0%, #044E5D 100%);
     transition: 0.3s ease;
 }
 
@@ -1407,7 +1429,7 @@ Projects section
 
 .projects_card:nth-child(5) .card_button:nth-of-type(1)
 {
-    left: 220px;
+    left: 230px;
 }
 
 
@@ -1419,6 +1441,66 @@ Projects section
 }
 
 
+/*card 6*/
+.projects_card:nth-child(6)
+{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, 
+    rgba(17,17,17,0.6) 100%), url('/images/website_card_image.svg');
+    background-size: 350px;
+    background-position: center;
+}
+
+.projects_card:nth-child(6) h2
+{
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    color: #1D79E8;
+}
+
+/*reveal text*/
+.projects_card:nth-child(6).active
+{
+    background: linear-gradient(to top, #6F9FEE 0%, #0728B9 100%);
+    transition: 0.3s ease;
+}
+
+
+/*card 7*/
+/*
+.projects_card:nth-child(7)
+{
+    background-image: url('/images/aeps_card_image.png');
+    background-size: 700px;
+    background-position: left top 110px;
+}
+
+.projects_card:nth-child(7) h2
+{
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    color: #F63434;
+}
+
+.projects_card:nth-child(7) p:after
+{
+    content: "Download the zip file, unzip it, navigate to the build folder, and run the aeps file to play the game! Co-developers - Max LoGalbo, Stephen Nguyen.";
+}
+
+.projects_card:nth-child(7) .card_button:nth-of-type(2)
+{
+    left: 230px;
+}
+
+/*reveal text*/
+/*
+.projects_card:nth-child(7).active
+{
+    background: linear-gradient(to top, #FF0000 0%, black 100%);
+    transition: 0.3s ease;
+}
+*/
 
 @media screen and (max-width: 1200px)
 {
@@ -1457,21 +1539,46 @@ Projects section
         left: 20px
     }
 
-    /*change aeps card*/
-    .projects_card:nth-child(3) p:after
+    /*Change weather app buttons*/
+    .projects_card:nth-child(2) .card_button:nth-of-type(2)
     {
-        content: "To download and play the game, please view this site on a pc/laptop. Co-developers - Max LoGalbo, Stephen Nguyen.";
+        left: 190px;
     }
 
-    .projects_card:nth-child(3) .card_button:nth-of-type(2)
+    /*change pulsar card*/
+    .projects_card:nth-child(4) p:after
+    {
+        content: "To download and play the game, please view this site on a pc/laptop.";
+    }
+
+    .projects_card:nth-child(4) .card_button:nth-of-type(2)
     {
         left: 20px;
     }
 
-    .projects_card:nth-child(3) .card_button:nth-of-type(1)
+    .projects_card:nth-child(4) .card_button:nth-of-type(1)
     {
         display: none;
     }
+
+
+    
+    /*change aeps card*/
+    /*
+    .projects_card:nth-child(7) p:after
+    {
+        content: "To download and play the game, please view this site on a pc/laptop. Co-developers - Max LoGalbo, Stephen Nguyen.";
+    }
+
+    .projects_card:nth-child(7) .card_button:nth-of-type(2)
+    {
+        left: 20px;
+    }
+
+    .projects_card:nth-child(7) .card_button:nth-of-type(1)
+    {
+        display: none;
+    }*/
 
     /*update flight optimizer buttons*/
     .projects_card:nth-child(5) .card_button:nth-of-type(1)
