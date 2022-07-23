@@ -1167,7 +1167,7 @@ Skills section
         zoom: 0.8;
     }
 
-    /*
+    
     .circle_svg circle 
     {
         fill: none;
@@ -1175,7 +1175,7 @@ Skills section
         stroke-dasharray: 90;
         stroke-dashoffset: 0;
         animation: none;
-    }*/
+    }
 }
 
 
