@@ -851,10 +851,7 @@ Skills section
     {
       stroke-dashoffset: -360;
     }
-    50% 
-    {
-      stroke-dashoffset: 0;
-    }
+
     100% 
     {
         stroke-dashoffset: 360;
@@ -1172,7 +1169,7 @@ Skills section
     {
         fill: none;
         stroke-width: 6px;
-        stroke-dasharray: 90;
+        stroke-dasharray: 360;
         stroke-dashoffset: 0;
         animation: none;
     }
