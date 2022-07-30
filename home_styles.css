@@ -941,7 +941,7 @@ Skills section
     font-size: 1.1rem;
     position: relative;
     left: 31px;
-    bottom: 130px;
+    bottom: 135px;
     text-align: center;
     width: 60px;
 }
@@ -951,7 +951,7 @@ Skills section
     background: none;
     font-size: 0.9rem;
     position: relative;
-    bottom: 165px;
+    bottom: 170px;
 }
 
 /*python*/
@@ -1285,6 +1285,7 @@ Projects section
 {
     transform: scale(1.075);
     transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 /*hide text when active is false*/
