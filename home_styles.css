@@ -160,7 +160,7 @@ navbar content
 .navbar .menu_item:hover
 {
     color: #8C1CEF;
-    outline: #8C1CEF solid 2px;
+    outline: #8C1CEF solid 2.5px;
     background-color: none;
     transition: none;
 }
@@ -168,28 +168,28 @@ navbar content
 .navbar.aboutMe .menu_item:hover
 {
     color: #0B82EC;
-    outline: #0B82EC solid 2px;
+    outline: #0B82EC solid 2.5px;
     transition: none;
 }
 
 .navbar.skills .menu_item:hover
 {
     color: #D9145C;
-    outline: #D9145C solid 2px;
+    outline: #D9145C solid 2.5px;
     transition: none;
 }
 
 .navbar.projects .menu_item:hover
 {
     color: #F82D19;
-    outline: #F82D19 solid 2px;
+    outline: #F82D19 solid 2.5px;
     transition: none;
 }
 
 .navbar.contact .menu_item:hover
 {
     color: #29D228;
-    outline: #29D228 solid 2px;
+    outline: #29D228 solid 2.5px;
     transition: none;
 }
 
@@ -1018,7 +1018,7 @@ Skills section
 
 .ml .skill_title
 {
-    left: 26px;
+    left: 28px;
     font-size: 0.8rem;
     margin-bottom: 42px;
 }
