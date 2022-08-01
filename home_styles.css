@@ -1673,7 +1673,12 @@ Contact Me section
 
 .form_group:hover
 {
-    outline: #29D228 1px solid;
+    outline: #29D228 2px solid;
+}
+
+.form_group:focus
+{
+    outline: #29D228 2px solid;
 }
 
 .user_name

@@ -74,10 +74,18 @@ button:hover
 
 .search-bar:hover
 {
-    border: 1.5px solid;
+    border: 2px solid;
     border-color: white;
     transition: 0.2s ease ease-in-out;
 }
+
+.search-bar:focus
+{
+    border: 2px solid;
+    border-color: white;
+}
+
+  
 
 .temp_container
 {
