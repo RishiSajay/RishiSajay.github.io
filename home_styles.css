@@ -1202,7 +1202,15 @@ Projects section
 .projects_intro
 {
     font-size: 1.5rem;
-    margin-bottom: 0;
+    margin-bottom: 30px;
+
+}
+
+.underlined_text
+{
+    background: none;
+    text-decoration: underline;
+    margin-left: 10px;
 }
 
 .mark3
