@@ -1560,17 +1560,23 @@ Projects section
     /*change pulsar card*/
     .projects_card:nth-child(4) p:after
     {
-        content: "To download and play the game, please view this site on a pc/laptop.";
-    }
-
-    .projects_card:nth-child(4) .card_button:nth-of-type(2)
-    {
-        left: 20px;
+        content: "To download or play the game, please view this site on a pc/laptop.";
     }
 
     .projects_card:nth-child(4) .card_button:nth-of-type(1)
     {
         display: none;
+    }
+
+    .projects_card:nth-child(4) .card_button:nth-of-type(2)
+    {
+        display: none;
+    }
+
+    .projects_card:nth-child(4) .card_button:nth-of-type(3)
+    {
+        top: 320px;
+        left: 20px;
     }
 
 
