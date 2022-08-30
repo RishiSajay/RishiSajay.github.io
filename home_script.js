@@ -60,7 +60,7 @@ function testUser() {
 
   var mac = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform);
   const circles = this.document.querySelectorAll('.circle_svg');
-  if (mac == true)
+  if (agent.indexOf('Mac') > -1)
   {
     for (let i = 0; i < circles.length; i++)
     {
