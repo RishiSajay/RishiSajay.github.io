@@ -54,6 +54,21 @@ window.addEventListener("scroll", function(event)
 /////////////////////////////////////////////////////////////////////////////////////
 
 
+//Change svg effect based on user agent
+let agent = navigator.userAgent;
+function testUser() {
+
+  var mac = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform);
+  mac = true;
+  const circles = this.document.querySelectorAll('.circle_svg');
+  for (let i = 0; i < circles.length; i++)
+  {
+    circles[i].classList.add('is_mac');
+  }
+}
+
+window.onload = testUser;
+/////////////////////////////////////////////////////////////////////////////////////////
 
 //change background height based on lowest element location for each section. Useful to adjust to all screen sizes ie mobile, ipad, etc
 //intro
