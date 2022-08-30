@@ -59,11 +59,13 @@ let agent = navigator.userAgent;
 function testUser() {
 
   var mac = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform);
-  mac = true;
   const circles = this.document.querySelectorAll('.circle_svg');
-  for (let i = 0; i < circles.length; i++)
+  if (mac == true)
   {
-    circles[i].classList.add('is_mac');
+    for (let i = 0; i < circles.length; i++)
+    {
+      circles[i].classList.add('is_mac');
+    }
   }
 }
 
