@@ -813,7 +813,8 @@ Skills section
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-left: 0px;
+    /*margin-left: 0px;*/
+    right: 5vw;
     width: 450px;
     height: 450px;
     top: 30px;
@@ -931,10 +932,11 @@ Skills section
     stroke-dasharray: 60;
     animation: circle_animation1 15s linear infinite;
     -moz-animation: circle_animation1 15s linear infinite;
-    -o-animation: circle_animation1 15s linear infinite;
     -webkit-animation: circle_animation1 15s linear infinite;
+    
 }
 
+/*still in development*/
 .circle_svg.is_mac circle
 {
     fill: none;
@@ -943,7 +945,8 @@ Skills section
     stroke-dashoffset: 180;
     animation: none;
 }
-  
+/**/
+
 .skill_title
 {
     background: none;
@@ -1146,9 +1149,9 @@ Skills section
 {
     margin-top: 25px;
     position: relative;
-    margin-left: 10vw;
-    left: 90px;
-    width: 35vw;
+    /*margin-right: 100px;*/
+    left: 8vw;
+    width: 40vw;
     max-width: 600px;
     min-width: 200px;
 }
@@ -1183,6 +1186,7 @@ Skills section
     {
         align-self: center;
         margin-left: 0vw;
+        right: 0vw;
     }
 
     .skills_text
@@ -1301,7 +1305,7 @@ Projects section
 {
     position: absolute;
     left: 30px;
-    top: 275px;
+    bottom: 35px;
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -1387,11 +1391,6 @@ Projects section
     color: #B15FC8;
 }
 
-.projects_card:nth-child(2) .powered_by
-{
-    top: 260px;
-}
-
 .projects_card:nth-child(2) .card_button:nth-of-type(2)
 {
     left: 230px;
@@ -1423,10 +1422,6 @@ Projects section
     top: 100px;
 }
 
-.projects_card:nth-child(3) .powered_by
-{
-    top: 260px;
-}
 
 .projects_card:nth-child(3) .card_button:nth-of-type(2)
 {
@@ -1674,6 +1669,20 @@ Projects section
         left: 190px;
     }
 
+    /*change imliterate*/
+    .projects_card:nth-child(3) .description
+    {
+        top: 80px;
+    }
+    .projects_card:nth-child(3) .powered_by
+    {
+        bottom: 33px;
+    }
+    .projects_card:nth-child(3) .card_button:nth-of-type(2)
+    {
+        left: 190px;
+    }
+
     /*change pulsar card*/
     .projects_card:nth-child(5) p:after
     {
@@ -1696,7 +1705,13 @@ Projects section
         left: 20px;
     }
 
+    /*change ML card*/
 
+    /*update flight optimizer buttons*/
+    .projects_card:nth-child(7) .card_button:nth-of-type(1)
+    {
+        left: 190px;
+    }
     
     /*change aeps card*/
     /*
@@ -1715,11 +1730,6 @@ Projects section
         display: none;
     }*/
 
-    /*update flight optimizer buttons*/
-    .projects_card:nth-child(5) .card_button:nth-of-type(1)
-    {
-        left: 190px;
-    }
 }
 
 
