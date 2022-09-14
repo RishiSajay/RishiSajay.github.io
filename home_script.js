@@ -1,3 +1,4 @@
+/////////////////////////////////////////////////////////////////////////////////////
 //smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => 
   {
@@ -13,6 +14,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor =>
 });
 /////////////////////////////////////////////////////////////////////////////////////
 
+/////////////////////////////////////////////////////////////////////////////////////
 //change navbar background based on position
 doc = document.documentElement;
 window.addEventListener("scroll", function(event)
@@ -54,8 +56,10 @@ window.addEventListener("scroll", function(event)
 /////////////////////////////////////////////////////////////////////////////////////
 
 
+
+/////////////////////////////////////////////////////////////////////////////////////
 //Change svg effect based on user agent
-let agent = navigator.userAgent;
+/*let agent = navigator.userAgent;
 function testUser() {
 
   var mac = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform);
@@ -69,9 +73,11 @@ function testUser() {
   }
 }
 
-window.onload = testUser;
+window.onload = testUser;*/
 /////////////////////////////////////////////////////////////////////////////////////////
 
+
+/////////////////////////////////////////////////////////////////////////////////////
 //change background height based on lowest element location for each section. Useful to adjust to all screen sizes ie mobile, ipad, etc
 //intro
 home = document.querySelector('.home_container');
@@ -87,7 +93,7 @@ skillsBody = document.querySelector('.skills_body_container');
 
 //projects
 projects = document.querySelector('.projects_container');
-lastProject = document.querySelector('.projects_card:nth-child(6)');
+lastProject = document.querySelector('.projects_card:nth-child(8)');
 
 //contact
 contact = document.querySelector('.contact_me_container');
@@ -125,12 +131,16 @@ window.onload = resizeHeight;
 window.addEventListener("resize", resizeHeight);
 /////////////////////////////////////////////////////////////////////////////////////
 
+
+/////////////////////////////////////////////////////////////////////////////////////
 //mobile navbar functionality
 const menu1 = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar_menu');
 const menuContainer = document.querySelector('.navbar_menu_container');
-//const intro = document.querySelector('.intro')
+/////////////////////////////////////////////////////////////////////////////////////
 
+
+/////////////////////////////////////////////////////////////////////////////////////
 //toggle navbar when you click the 3 bars
 menu1.addEventListener('click', function()
 {
@@ -148,7 +158,9 @@ menu1.addEventListener('click', function()
   }
 
 });
+/////////////////////////////////////////////////////////////////////////////////////
 
+/////////////////////////////////////////////////////////////////////////////////////
 //disable active class if menu item is clicked
 menuLinks.addEventListener('click', function()
 {
@@ -168,10 +180,10 @@ if (window.innerWidth <= 450)
   contact.classList.toggle('active')
 }
 });
-
 /////////////////////////////////////////////////////////////////////////////////////
 
 
+/////////////////////////////////////////////////////////////////////////////////////
 //info card functionality
 const card = document.querySelector('.intro_card');
 const text = document.querySelector('.text');
@@ -185,6 +197,7 @@ card.addEventListener('click', function()
 
 
 
+/////////////////////////////////////////////////////////////////////////////////////
 //project card functionality
 const projectCards = document.querySelectorAll('.projects_card');
 const projectTexts = document.querySelectorAll('.projects_card p');
@@ -198,6 +211,9 @@ for (let i = 0; i < projectCards.length; i++)
   });
 }
 /////////////////////////////////////////////////////////////////////////////////////
+
+
+
 
 //contact me 
 //The formspree api is used to generate a message and send it to my email after the user clicks submit

@@ -930,6 +930,9 @@ Skills section
     /*stroke-dasharray: 360;*/
     stroke-dasharray: 60;
     animation: circle_animation1 15s linear infinite;
+    -moz-animation: circle_animation1 15s linear infinite;
+    -o-animation: circle_animation1 15s linear infinite;
+    -webkit-animation: circle_animation1 15s linear infinite;
 }
 
 .circle_svg.is_mac circle
@@ -1369,6 +1372,7 @@ Projects section
 {
     color: #f77062;
 }
+
 /*card 2*/
 .projects_card:nth-child(2)
 {
@@ -1403,32 +1407,45 @@ Projects section
 /*card 3*/
 .projects_card:nth-child(3)
 {
-    background-image: url('/images/kdtree_card_image.png');
-    background-size: 550px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, 
+    rgba(17,17,17,0.2) 100%), url('/images/ImLiterate_card_image.png');
+    background-size: 400px;
     background-position: center;
 }
 
 .projects_card:nth-child(3) h2
 {
-    position: absolute;
-    top: 0px;
-    left: 30px;
-    color: #28C384;
+    color: #5C95C0;
+}
+
+.projects_card:nth-child(3) .description
+{
+    top: 100px;
+}
+
+.projects_card:nth-child(3) .powered_by
+{
+    top: 260px;
+}
+
+.projects_card:nth-child(3) .card_button:nth-of-type(2)
+{
+    left: 230px;
 }
 
 /*reveal text*/
 .projects_card:nth-child(3).active
 {
-    background: linear-gradient(to top, #28C384 0%, #02462A 100%);
+    background: linear-gradient(to top, #99BBC2 0%, #95DAE9 100%);
     transition: 0.3s ease;
 }
+
 
 /*card 4*/
 .projects_card:nth-child(4)
 {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, 
-    rgba(17,17,17,0.6) 100%), url('/images/pulsar_card_image.jpg');
-    background-size: 700px;
+    background-image: url('/images/kdtree_card_image.png');
+    background-size: 550px;
     background-position: center;
 }
 
@@ -1437,29 +1454,13 @@ Projects section
     position: absolute;
     top: 0px;
     left: 30px;
-    color: #0BA1BF;
-}
-
-.projects_card:nth-child(4) p:after
-{
-    content: "Note: Online gameplay may experience lag. To play on your local device: Click Download Game -> Download the zip file -> unzip -> run Pulsar.exe to play!";
-}
-
-.projects_card:nth-child(4) .card_button:nth-of-type(2)
-{
-    left: 160px;
-}
-
-.projects_card:nth-child(4) .card_button:nth-of-type(3)
-{
-    left: 234px;
-    top: 270px;
+    color: #28C384;
 }
 
 /*reveal text*/
 .projects_card:nth-child(4).active
 {
-    background: linear-gradient(to top, #1AC3E5 0%, #044E5D 100%);
+    background: linear-gradient(to top, #28C384 0%, #02462A 100%);
     transition: 0.3s ease;
 }
 
@@ -1467,9 +1468,9 @@ Projects section
 .projects_card:nth-child(5)
 {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, 
-    rgba(17,17,17,0.3) 100%), url('/images/flight_card_image.svg');
+    rgba(17,17,17,0.6) 100%), url('/images/pulsar_card_image.jpg');
     background-size: 700px;
-    background-position: top;
+    background-position: center;
 }
 
 .projects_card:nth-child(5) h2
@@ -1477,29 +1478,38 @@ Projects section
     position: absolute;
     top: 0px;
     left: 30px;
-    color: #64CE1C;
+    color: #0BA1BF;
 }
 
-.projects_card:nth-child(5) .card_button:nth-of-type(1)
+.projects_card:nth-child(5) p:after
 {
-    left: 230px;
+    content: "Note: Online gameplay may experience lag. To play on your local device: Click Download Game -> Download the zip file -> unzip -> run Pulsar.exe to play!";
 }
 
+.projects_card:nth-child(5) .card_button:nth-of-type(2)
+{
+    left: 160px;
+}
+
+.projects_card:nth-child(5) .card_button:nth-of-type(3)
+{
+    left: 234px;
+    top: 270px;
+}
 
 /*reveal text*/
 .projects_card:nth-child(5).active
 {
-    background: linear-gradient(to top, #70EA1E 0%, #088414 100%);
+    background: linear-gradient(to top, #1AC3E5 0%, #044E5D 100%);
     transition: 0.3s ease;
 }
-
 
 /*card 6*/
 .projects_card:nth-child(6)
 {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, 
-    rgba(17,17,17,0.3) 100%), url('/images/website_card_image.svg');
-    background-size: 350px;
+    rgba(17,17,17,0.3) 100%), url('/images/ml_microprojects_image.jpg');
+    background-size: 470px;
     background-position: center;
 }
 
@@ -1508,11 +1518,77 @@ Projects section
     position: absolute;
     top: 0px;
     left: 30px;
-    color: #1D79E8;
+    color: #8D10E3;
+}
+
+.projects_card:nth-child(6) .description
+{
+    top: 100px;
 }
 
 /*reveal text*/
 .projects_card:nth-child(6).active
+{
+    background: linear-gradient(to top, #B65BF4 0%, #24003D 100%);
+    transition: 0.3s ease;
+}
+
+.projects_card:nth-child(6) .card_button:nth-of-type(2)
+{
+    left: 185px;
+}
+
+
+/*card 7*/
+.projects_card:nth-child(7)
+{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, 
+    rgba(17,17,17,0.3) 100%), url('/images/flight_card_image.svg');
+    background-size: 700px;
+    background-position: top;
+}
+
+.projects_card:nth-child(7) h2
+{
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    color: #64CE1C;
+}
+
+.projects_card:nth-child(7) .card_button:nth-of-type(1)
+{
+    left: 230px;
+}
+
+
+/*reveal text*/
+.projects_card:nth-child(7).active
+{
+    background: linear-gradient(to top, #70EA1E 0%, #088414 100%);
+    transition: 0.3s ease;
+}
+
+
+/*card 8*/
+.projects_card:nth-child(8)
+{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, 
+    rgba(17,17,17,0.3) 100%), url('/images/website_card_image.svg');
+    background-size: 350px;
+    background-position: center;
+}
+
+.projects_card:nth-child(8) h2
+{
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    color: #1D79E8;
+}
+
+/*reveal text*/
+.projects_card:nth-child(8).active
 {
     background: linear-gradient(to top, #6F9FEE 0%, #0728B9 100%);
     transition: 0.3s ease;
@@ -1599,22 +1675,22 @@ Projects section
     }
 
     /*change pulsar card*/
-    .projects_card:nth-child(4) p:after
+    .projects_card:nth-child(5) p:after
     {
         content: "To download or play the game, please view this site on a pc/laptop.";
     }
 
-    .projects_card:nth-child(4) .card_button:nth-of-type(1)
+    .projects_card:nth-child(5) .card_button:nth-of-type(1)
     {
         display: none;
     }
 
-    .projects_card:nth-child(4) .card_button:nth-of-type(2)
+    .projects_card:nth-child(5) .card_button:nth-of-type(2)
     {
         display: none;
     }
 
-    .projects_card:nth-child(4) .card_button:nth-of-type(3)
+    .projects_card:nth-child(5) .card_button:nth-of-type(3)
     {
         top: 320px;
         left: 20px;
