@@ -22,7 +22,7 @@ window.addEventListener("scroll", function(event)
   navbar = this.document.querySelector('.navbar');
   aboutMe = this.document.querySelector('.about_me_container');
   skills = this.document.querySelector('.skills_container');
-  projects = this.document.querySelector('.projects_container');
+  experience = this.document.querySelector('.experience_container');
   contact = this.document.querySelector('.contact_me_container');
   var top  = this.scrollY;
 
@@ -38,12 +38,18 @@ window.addEventListener("scroll", function(event)
   if (top > (skills.getBoundingClientRect().top + this.scrollY - 80))
   {
       navbar.classList.remove('aboutMe');
-      navbar.classList.remove('projects');
+      navbar.classList.remove('experience');
       navbar.classList.add('skills');
   }
   if (top > (skills.getBoundingClientRect().bottom + this.scrollY - 80))
   {
       navbar.classList.remove('skills');
+      navbar.classList.remove('projects');
+      navbar.classList.add('experience');
+  }
+  if (top > (experience.getBoundingClientRect().bottom + this.scrollY - 80))
+  {
+      navbar.classList.remove('experience');
       navbar.classList.remove('contact');
       navbar.classList.add('projects');
   }
@@ -91,6 +97,10 @@ myPic = document.querySelector('.my_picture');
 skills = document.querySelector('.skills_container');
 skillsBody = document.querySelector('.skills_body_container');
 
+//experience
+experience = document.querySelector('.experience_container');
+lastExperience = document.querySelector('.experience_card_container:nth-child(1)');
+
 //projects
 projects = document.querySelector('.projects_container');
 lastProject = document.querySelector('.projects_card:nth-child(8)');
@@ -119,11 +129,14 @@ aboutMe.style.height = height2 + "px";
 height3 = (skillsBody.getBoundingClientRect().bottom + 200) - (skills.getBoundingClientRect().top);
 skills.style.height = height3 + "px";
 
-height4 = (lastProject.getBoundingClientRect().bottom + 100) - (projects.getBoundingClientRect().top);
-projects.style.height = height4 + "px";
+height4 = (lastExperience.getBoundingClientRect().bottom + 200) - (experience.getBoundingClientRect().top);
+experience.style.height = height4 + "px";
 
-height5 = (message.getBoundingClientRect().bottom + 70) - (contact.getBoundingClientRect().top);
-contact.style.height = height5 + "px";
+height5 = (lastProject.getBoundingClientRect().bottom + 100) - (projects.getBoundingClientRect().top);
+projects.style.height = height5 + "px";
+
+height6 = (message.getBoundingClientRect().bottom + 70) - (contact.getBoundingClientRect().top);
+contact.style.height = height6 + "px";
 }
 
 
@@ -194,7 +207,6 @@ card.addEventListener('click', function()
   text.classList.toggle('active');
 });
 /////////////////////////////////////////////////////////////////////////////////////
-
 
 
 /////////////////////////////////////////////////////////////////////////////////////

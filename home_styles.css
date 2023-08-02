@@ -82,6 +82,12 @@ navbar content
     background: linear-gradient(to bottom, #BD215A, black);
 }
 
+.navbar.experience
+{
+    background: linear-gradient(to bottom, #E7E4CB, #898575);
+    color: black;
+}
+
 .navbar.projects
 {
     background: linear-gradient(to bottom, #F8240F, white);
@@ -176,6 +182,13 @@ navbar content
 {
     color: #D9145C;
     outline: #D9145C solid 2.5px;
+    transition: none;
+}
+
+.navbar.experience .menu_item:hover
+{
+    color: #E7E4CB;
+    outline: #E7E4CB solid 2.5px;
     transition: none;
 }
 
@@ -606,6 +619,7 @@ About me content
 
 .about_me_container
 {
+    /*background: #BEEFFF;*/
     background: white;
     display: flex;
     align-items: center;
@@ -618,7 +632,7 @@ About me content
     margin-top: 85px;
     font-size: 3rem;
     text-decoration:overline underline;
-    text-underline-offset: 15px;
+    text-underline-offset: 25px;
 }
 
 .about_me_body_container
@@ -799,7 +813,7 @@ Skills section
     margin-top: 85px;
     font-size: 3rem;
     text-decoration: overline underline;
-    text-underline-offset: 15px;
+    text-underline-offset: 25px;
 }
 
 .skills_body_container
@@ -1220,9 +1234,110 @@ Skills section
     {
         zoom: 0.8;
     }
-
 }
 
+/*
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+experience content
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+.experience_container
+{
+    /*background: #F2EADA;*/
+    background: #898575;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s ease;
+    height: 100vh;
+}
+
+.experience_title
+{
+    margin-top: 85px;
+    font-size: 3rem;
+    text-decoration:overline underline;
+    text-underline-offset: 25px;
+}
+
+.experience_body_container
+{
+    display: flex;
+    max-width: 1600px;
+}
+
+.experience_card_container
+{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 10px;
+    width: 60vw;
+    color: black;
+    background-color: #B9B6A3;
+}
+
+.amazon_text_container 
+{
+    margin: auto;
+    width: 55vw;
+}
+
+.amazon_text
+{
+    font-size: 1.75rem;
+}
+
+.amazon_text a
+{
+    text-decoration: none;
+}
+
+.mark3
+{
+    background: none;
+    color: #76633E;
+}
+
+.mark3:hover
+{
+    background: none;
+    color: #5C523A;
+}
+
+
+.experience_card_content
+{
+    text-align: left;
+    width: 55vw;
+    margin: auto;
+    font-size: 1.25rem;
+}
+
+.experience_card_content a
+{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .amazon_text_container 
+    {
+        width: 80vw;
+        margin: auto;
+    }
+
+    .experience_card_container
+    {
+        width: 85vw;
+    }
+
+    .experience_card_content
+    {
+        width: 80vw;
+    }
+}
 
 
 /*
@@ -1244,7 +1359,7 @@ Projects section
     margin-top: 85px;
     font-size: 3rem;
     text-decoration:overline underline;
-    text-underline-offset: 15px;
+    text-underline-offset: 25px;
 }
 
 .projects_intro
@@ -1261,7 +1376,7 @@ Projects section
     margin-left: 10px;
 }
 
-.mark3
+.mark4
 {
     background: none;
     color: #EA400C;
@@ -1753,7 +1868,7 @@ Contact Me section
     margin-top: 85px;
     font-size: 3rem;
     text-decoration: overline underline;
-    text-underline-offset: 15px;
+    text-underline-offset: 25px;
 }
 
 .contact_me_container_inner
@@ -1777,7 +1892,7 @@ Contact Me section
     font-size: 1.5rem;
 }
 
-.mark4
+.mark5
 {
     background: none;
     color: #1FB803;
